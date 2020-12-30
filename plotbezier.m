@@ -23,10 +23,10 @@ if size(B, 2) == 2
 end
 
 if size(B, 2) == 3
-    plot(B(:,1), B(:,2), B(:,3), 'b-o')
+    plot(B(:,1), B(:,2), B(:,3), '-o')
     
     hold on
     D = bezier(B, t)
-    plot(D(:,1), D(:,2), D(:,3), 'r-o')
+    plot(D(:,1), D(:,2), D(:,3), '-o')
     hold off
 end

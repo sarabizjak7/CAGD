@@ -18,11 +18,12 @@ n = size(B,1);
 X = decasteljau(B(:,1),t);
 Y = decasteljau(B(:,2),t);
 
-% PRVA VRSTICA, drugač zapisano kot na predavanjih
+% PRVA VRSTICA, drugač zapisano kot na predavanjih - LEVI DEL
 B1(:,1) = X(1,:);
 B1(:,2) = Y(1,:);
 
-% DIAGONALA, od zgoraj proti dol, zato obrnemo, da preberemo po vrsti
+% DIAGONALA, od zgoraj proti dol, zato obrnemo, da preberemo po vrsti -
+% DESNI DEL
 B2(:,1) = diag(flip(X,2));
 B2(:,2) = diag(flip(Y,2));
 
