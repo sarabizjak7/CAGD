@@ -24,15 +24,18 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/ucs/ucs.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/ucs/ucs.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-global.def
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-global.def
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/antt/anttor.sty
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/antt/anttor.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/antt/t1anttl.fd
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/antt/t1anttl.fd
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/antt/ec-anttl.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/babel/switch.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/babel-slovenian/slovene.ldf
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/babel-slovenian/slovene.ldf
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/appendix/appendix.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/appendix/appendix.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -75,6 +78,8 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/relsize/relsize.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -110,16 +115,6 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/algorithms/algorithm.sty
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/algorithms/algorithm.sty
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/Vaje/CAGD/Projekt/Porocilo.aux
 INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/Vaje/CAGD/Projekt/Porocilo.aux
 OUTPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/Vaje/CAGD/Projekt/Porocilo.aux
@@ -144,34 +139,32 @@ INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/Vaje/CAGD/Projekt/Poroci
 INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/Vaje/CAGD/Projekt/Porocilo.out
 INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/Vaje/CAGD/Projekt/Porocilo.out
 INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/Vaje/CAGD/Projekt/Porocilo.out
+OUTPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/Vaje/CAGD/Projekt/Porocilo.pdf
 INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/Vaje/CAGD/Projekt/Porocilo.out
 INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/Vaje/CAGD/Projekt/Porocilo.out
 OUTPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/Vaje/CAGD/Projekt/Porocilo.out
-OUTPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/Vaje/CAGD/Projekt/Porocilo.pdf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-1.def
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-1.def
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/antt/ot1anttlm.fd
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/antt/ot1anttlm.fd
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/antt/rm-anttl.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/antt/rm-anttl.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/antt/rm-anttl.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/antt/omlanttl.fd
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/antt/omlanttl.fd
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/antt/mi-anttli.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/antt/mi-anttli.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/antt/mi-anttli.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/antt/omsanttl.fd
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/antt/omsanttl.fd
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/antt/sy-anttlz.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/antt/sy-anttlz.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/antt/sy-anttlz.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/antt/omxanttl.fd
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/antt/omxanttl.fd
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/antt/ex-anttl.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/antt/ex-anttl.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/antt/ex-anttl.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr6.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omllmm.fd
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omllmm.fd
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi8.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi6.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omxlmex.fd
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omxlmex.fd
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmex10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
@@ -182,11 +175,62 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx8.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx6.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmib10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmib10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmib7.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmbsy10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmbsy10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmbsy7.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr9.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi9.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi7.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy9.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy7.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/Vaje/CAGD/Projekt/Porocilo.aux
 INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/Vaje/CAGD/Projekt/Porocilo.out
 INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/Vaje/CAGD/Projekt/Porocilo.out
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmib10.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
