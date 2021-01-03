@@ -158,33 +158,80 @@ Koordinate točk zamenjamo s koordinatami prostora $\mathbb{R}^3$, ki smo jih do
 $$\left(\frac{\tilde{X}(t)}{W(t)}\right)^2+\left(\frac{\tilde{Y}(t)}{W(t)}\right)^2=1$$
 $$\tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0$$
 Zadnja enačba predstavlja enačbo stožca. Vidimo, da racionalna krivulja $C(t)$ eksaktno opiše krožnico kot projekcijo krivulje $\tilde{C}(t)$ (ki leži na stožcu) na ravnino $w = 1$.
-\\
-\\
-SLIKA stožca
-\\
-\\
-Iskanje racionalne krivulje čim nižje stopnje, ki eksaktno opiše celotno krožnico, lahko torej prevedemo na problem iskanja krivulje, ki leži na stožcu. 
 
+\begin{figure}[ht!]
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=80mm]{stozec.png}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=90mm]{stozec_od_strani.png}
+    \end{minipage}\hfill
+    \caption{Krožnico lahko dobimo kot projekcijo krivulje, ki leži na stožcu, na ravnino $w = 1$.}
+\end{figure}
+\noindent
+Iskanje racionalne krivulje čim nižje stopnje, ki eksaktno opiše celotno krožnico, lahko torej prevedemo na problem iskanja krivulje, ki leži na stožcu. 
+\\
+V naslednjih podpoglavjih bomo preučili B\'ezierjeve krivulje, ki tvorijo celoten krog. 
+Še posebej nas bodo zanimale take krivulje, ki imajo same pozitivne uteži, saj bo take krivulje tudi lažje implementirati.
+\\
+Začeli bomo s kvadratično B\'ezierjevo krivuljo in nadaljevali s krivuljami z naraščajočim polinomskim redom.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{ Kvadratična krivulja}
-Pokazali bomo, da racionalna kvadratična krivulja ne more opisati celotne krožnice. Vse neracionalne kvadratične B\'ezierjeve krivulje so parabole, vse parabole pa dobimo kot presek stožca z ravnino, ki je vzporedna eni od nosilk stožca. Ko ravnino, s katero presekamo stožec, premikamo proti nosilki stožca, opazimo, da bo krožni lok v projekciji  na ravnino opisal vedno večji kot, torej smo vedno bližje polnemu krogu. Ko pa naredimo presek ravnine z nosilko stožca, je presek premica, ki se v projekciji slika v eno točko. Krožnice zato ne moremo zapisati s kvadratično racionalno krivuljo. 
+Pokazali bomo, da racionalna kvadratična krivulja ne more opisati celotne krožnice. Do tega nas privede enostaven razmislek. 
+Vse neracionalne kvadratične B\'ezierjeve krivulje so parabole, vse parabole pa dobimo kot presek stožca z ravnino, ki je vzporedna eni od nosilk stožca. 
+\begin{figure}[ht!]
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=80mm]{stozec_presek_1.png}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=80mm]{stozec_presek_2.png}
+    \end{minipage}\hfill
+    \caption{Presek stožca z ravnino, ki je vzporedna njegovi nosilki. Na sliki je ravnina obarvana z rumeno barvo, nosilka pa z rdečo.}
+\end{figure}
 
-Opazimo, da lahko s parabolo zapišemo krožne loke, ki jih lahko opišemo z naslednjim kontrolnim poligonom:
+\noindent
+Ko ravnino, s katero presekamo stožec, premikamo proti nosilki stožca, opazimo, da bo krožni lok v projekciji na ravnino opisal vedno večji kot, torej smo vedno bližje polnemu krogu. 
+Ko pa se ravnina, s katero stožec sekamo, in nosilka stožca ujameta, je njun presek premica, ki se v projekciji slika v eno točko. 
+Krožnice zato ne moremo zapisati s kvadratično racionalno krivuljo. 
+
+\noindent
+Opazimo pa, da lahko s parabolo zapišemo krožne loke, ki jih opišemo z naslednjim kontrolnim poligonom:
 \begin{align*}
-\boldsymbol{\tilde{P}}_0 &= (cos(\theta), -sin(\theta), 1)\\
-\boldsymbol{\tilde{P}}_1 &= (1, 0, cos(\theta))\\
-\boldsymbol{\tilde{P}}_2 &= (cos(\theta), sin(\theta), 1),
+\boldsymbol{\tilde{P}}_0 &= (cos\theta, -sin\theta, 1)\\
+\boldsymbol{\tilde{P}}_1 &= (1, 0, cos\theta)\\
+\boldsymbol{\tilde{P}}_2 &= (cos\theta, sin\theta, 1),
 \end{align*}
-kjer je $\theta$ polovični kot krožnega loka. Če izberemo samo pozitivne uteži ($\cos{\theta}>0$), je $C(t)$ manj kot $180^{\circ}$, če pa je srednja utež enaka $0$ ($\cos{\theta}=0$), je $C(t)$ točno $180^{\circ}$. ??
+kjer je $\theta$ polovični kot krožnega loka. 
+% Če izberemo samo pozitivne uteži ($\cos{\theta}>0$), je $C(t)$ manj kot $180^{\circ}$, če pa je srednja utež enaka $0$ ($\cos{\theta}=0$), je $C(t)$ točno $180^{\circ}$. ??
 % Za prvo in zadnjo točko si izberemo točki, ki ležita na krožnici, srednjo točko pa zaradi simetrije izberemo na polovičnem kotu med njima. Pri tem izberemo take uteži, da zadoščajo enačbi stožca. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Kubična krivulja}
 Pokazali bomo, da tudi racionalna kubična krivulja ne more opisati celotne krožnice. \\
-Za kontrolni poligon potrebujemo štiri kontrolne točke. S krivuljo interpoliramo prvo in zadnjo kontrolno točko, izberemo ju na stožcu.
-????
+Denimo, da jo lahko, in da je krivulja $\tilde{C}(t)$, ko jo preslikamo na ravnino $w = 1$, torej $C(t)$, krožnica.
+Za kontrolni poligon izberemo štiri kontrolne točke, označimo jih $\boldsymbol{b}_0, \boldsymbol{b}_1, \boldsymbol{b}_2, \boldsymbol{b}_3$. Ker gre krivulja skozi prvo in zadnjo kontrolno točko, ju izberemo na stožcu.
+Vemo, da so racionalne kubične krivulje sklenjene, zato se bosta ti dve kontrolni točki ob projekciji na ravnino $w = 1$ preslikali v isto točko. 
+Zato lahko za prvo in zadnjo kontrolno točko $\boldsymbol{b}_0$ in $\boldsymbol{b}_3$ izberemo kar isto točko, ki že leži na ravnini $w = 1$. 
+Ker krivulja $\tilde{C}(t)$ leži na stožcu, mora tangetna na krivuljo v točki $\boldsymbol{b}_0$ (in hkrati tudi $\boldsymbol{b}_3$) ležati na tangetni ravnini stožca v tej isti točki.
+Iz tega sledi, da tudi kontrolni točki $\boldsymbol{b}_1$ in $\boldsymbol{b}_2$ ležita na tangetni ravnini. Vemo, da je presek tangetne ravnine s stožcem premica, torej je krivulja $C(t)$ točka.
+Tako pridemo do zaključka, da tudi kubične krivulje ne morejo opisati celotne krožnice.
+\begin{figure}[ht!]
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=80mm]{stozec_tang_1.png}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=80mm]{stozec_tang_2.png}
+    \end{minipage}\hfill
+    \caption{Presek stožca s tangentno ravnino. Presek je premica, ki je enaka eni od nosilk stožca.}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -250,6 +297,42 @@ TUKI BI BLO FAJN DAT ŠE KAK PRIMER - SO V ČLANKU
 \section{Kubični B\'ezierjev krožni lok}
 
 
+Radi bi poiskali vse kubične B\'ezierjeve krožne loke. Da dobimo pogoje za kontrolne točke B\'ezierjeve krivulje, podobno kot prej krivuljo vstavimo v enačbo stožca
+$$ \tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0.$$
+Ko enačimo koeficiente $B_i^6(t),\,i=0\ldots6$ z $0$ dobimo sedem enačb.\\
+Spomnimo se, da smo pri kvadratični krivulji izbrali za prvo in zadnjo točko dve točki, ki ležita na krožnici, srednjo točko pa na polovičnem kotu med njima. Tudi tu lahko predpostavimo, da sta prva in zadnja točka na krožnici:
+\begin{align*}
+\boldsymbol{\tilde{P}}_0 &= (cos(\theta), -sin(\theta), 1)\\
+\boldsymbol{\tilde{P}}_3 &= (cos(\theta), sin(\theta), 1),
+\end{align*}
+kjer je $\theta$ polovica krožnega loka.  S tem se nam sedem enačb poenostavi v pet enačb:
+\begin{align*}
+w_1 = \tilde{x_1}\cos{\theta} - \tilde{y_1} \sin{\theta}   \\
+w_2 = \tilde{x_2}\cos{\theta} + \tilde{y_2} \sin{\theta}   \\
+3\tilde{x_1}^2\sin^2{\theta} + 3\tilde{y_1}^2\cos^2{\theta} - 4\tilde{y_2} \sin{\theta}  + 6\tilde{x_1}\tilde{y_1} \sin{\theta} \cos{\theta} = 0 \\
+9\tilde{x_1}\tilde{x_2}\sin^2{\theta} + 9\tilde{y_1}\tilde{x_2}\cos{\theta} \sin{\theta} - 9\tilde{x_1} \tilde{y_2} \cos{\theta} \sin{\theta}+ \\
++ 9 (1 + \sin^2{\theta}) \tilde{y_1} \tilde{y_2} - 2\sin^2{\theta} = 0 \\
+3\tilde{x_2}^2 \sin^2{\theta}+ 3\tilde{y_2}^2 \cos^2{\theta}+ 4\tilde{y_1} \sin{\theta}  - 6\tilde{x_2}\tilde{y_2}\sin{\theta} \cos{\theta}  = 0 
+\end{align*}
+
+PRIMER ZA $\theta=\pi/2$ ???
+
+Ko je kot $\theta$ spremenljivka, je iz zgornjega sistema enačb težko dobiti eksplicitno rešitev. V nadaljevanju si bomo ogledali drugačen pristop za iskanje kubičnih B\'ezierjevih krožnih lokov, pomagali si bomo z spodnjim izrekom.
+
+\begin{izrek}
+Če je krivulja
+$$\boldsymbol{C}(t)=\frac{(\tilde{X}(t),\tilde{Y}(t))}{W(t)}$$
+omejena za $t\in [-\infty,\infty]$ in so $\tilde{X}(t),\tilde{Y}(t)$ in $W(t)$ polinomi brez skupnih deliteljev, potem noben izmed $\tilde{X}(t),\tilde{Y}(t)$ in $W(t)$ ni lihe stopnje.
+\end{izrek}
+
+\begin{proof}
+Najdemo ga v \cite{chou}.
+\end{proof}
+
+Iz izreka sledi, da so edini možni kubični B\'ezierjevi krožni loki oblike
+$$\boldsymbol{C}(t)=\frac{(\tilde{X}(t),\tilde{Y}(t))(aB_0^1(t)+bB_1^1(t))}{W(t)(aB_0^1(t)+bB_1^1(t))},$$
+kjer je $$\frac{(\tilde{X}(t),\tilde{Y}(t))}{W(t)}$$
+kvadratični krožni lok.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{thebibliography}{99}

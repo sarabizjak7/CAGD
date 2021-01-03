@@ -222,13 +222,31 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/krog_po_delih.png
 INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/krog_po_delih.png
 INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/krog_po_delih.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_od_strani.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_od_strani.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_od_strani.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_presek_1.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_presek_1.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_presek_1.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_presek_2.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_presek_2.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_presek_2.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_tang_1.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_tang_1.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_tang_1.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_tang_2.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_tang_2.png
+INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_tang_2.png
 INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/Porocilo.aux
 INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/Porocilo.out
 INPUT /Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/Porocilo.out
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
@@ -243,5 +261,4 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
