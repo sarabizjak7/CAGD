@@ -65,7 +65,8 @@ v racionalni B\'ezierjevi obliki
 \section{Uvod}
 V seminarski nalogi so predstavljene krožnice in ostale stožnice v racionalni B\'ezierjevi obliki. Med tem ko so stožnice na splošno omenjene le v grobem, pa se v krožnice bolj poglobimo in jih podamo natančneje.
 
-Organizacija članka.
+Najprej se na splošno seznanimo z racionalnimi B\'ezierjevimi krivuljami in jih poslošimo na stožnice. Iz stožnic preidemo na krožnico in si jo natančeneje pogledamo. Ugotovimo, kako lahko dobimo sklenjeno krožnico z racionalno krivuljo čim nižje stopnje in jo konstruiramo.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -85,13 +86,15 @@ kjer so $\boldsymbol{b}_i$ kontrolne točke krivulje, $w_i\in\mathbb{R}^d$ utež
 \end{definicija}
  
 Krivuljo lahko brez škode za splošnost reparametriziramo tako, da sta $w_0$ in $w_n$ enaka $1$. Taki obliki pravimo \emph{standardna oblika} racionalne B\'ezierjeve krivulje.
-Ostale uteži so prosti parametri, ki vplivajo na obliko krivulje. Racionalne B\'ezierjeve krivulje s pozitivnimi utežmi imajo podobne lastnosti kot polinomske. 
+Ostale uteži so prosti parametri, ki vplivajo na obliko krivulje -- s povečanjem enega izmed $w_i$ se krivulja približa ustreznemu $\boldsymbol{b}_i$. Racionalne B\'ezierjeve krivulje s pozitivnimi utežmi imajo podobne lastnosti kot polinomske. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Stožnice v racionalni B\'ezierjevi obliki}
 Stožnice bomo zapisali s pomočjo krivulje stopnje $2$, zato bo kontrolni poligon sestavljen iz treh kontrolni točk. Ker lahko izberemo uteži v standardni obliki, velja: 
-$$w_0=w_2=1,\,w_1=w,$$
+$$w_0=w_2=1 $$
+in
+$$ w_1=w,$$
 kjer je $w_1$ prosta utež.
 \\
 Stožnice lahko zapišemo v racionalni B\'ezierjevi obliki kot 
@@ -104,40 +107,63 @@ B_1^2(t) &= 2t\cdot(1-t) \\
 B_2^2(t) &= t^2 \\
 \end{align*}
 
-Ker uteži, kot je že bilo omenjeno, izbiramo v standardni obliki, je srednja utež $w_1$ prosti parameter, ki vpliva na obliko krivulje. Če utež $w_1$ povečujemo, se krivulja približuje kontrolni točki $b_1$ kot je prikazano na sliki \ref{slika:w1}.
+Ker uteži, kot že omenjeno, izbiramo v standardni obliki, je srednja utež $w_1$ prosti parameter, ki vpliva na obliko krivulje. Če utež $w_1$ povečujemo, se krivulja približuje kontrolni točki $b_1$ kot je prikazano na sliki \ref{slika:w1}.
 
 \begin{figure}[ht!]\label{slika:w1}
     \centering
-    \includegraphics[width=50mm]{vecanje_w1.png}
+    \includegraphics[width=70mm]{vecanje_w1.png}
     \caption{Krivulji na obeh slikah sta v standardni obliki, torej velja $w_0 = w_2 = 1$. Sliki prikazujeta večanje uteži $w_1$, to je približevanje krivulje k kontrolni točki $b_1$. Slika je povzeta po \cite{farin}.}
 \end{figure}
 
-%With this representation,the type of conic is characterized by the value of the middle weight,w:r(t)is an ellipse whenw<1, aparabola whenw=1 and a hyperbola whenw>1. Also, whenwis negative,r(t)is the complementarysegment of the original conic segment (see (Lee, 1987) and (Farin, 1993))
-
+\newpage
 Spreminjanjae uteži $w_1$ in vpliv na obliko krivuljo lahko klasificiramo v tri skupine. Če je $w_1 < 1$, ima krivulja obliko elipse, če je $w_1 = 1$ je krivulja parabola, za $w_1 > 1$ pa dobimo hiperbolo. Omenjeni trije tipi krivulj so prikazani na sliki \ref{slika:klasifikacija}.
 
 \begin{figure}[ht!]\label{slika:klasifikacija}
     \centering
-    \includegraphics[width=60mm]{tri_oblike.png}
-    \caption{Klasifikacije krivulje glede na spreminjanje srednje uteži $w_1$. Slika je povzeta po \cite{farin}.}
+    \includegraphics[width=70mm]{tri_oblike.png}
+    \caption{Klasifikacije krivulje glede na spreminjanje srednje uteži $w_1$ pri predpostavki, da velja $w_0 = w_2 = 1$. Slika je povzeta po \cite{farin}.}
 \end{figure}
-
+\noindent
+Ena izmed najpomembnejših stožnic je krog, zato mu v nadaljevanju posvetimo več pozornosti.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Racionalna B\'ezierjeva krivulja za krožnico}
+\section{Krožnica v racionalni B\'ezierjevi obliki}
+
+\subsection{Motivacija}
+
+Naj kvadratična krivulja z utežjo $w_1 < 1$ opiše krožni lok. Ker je krog simetričen, mora kontrolni poligon tvoriti enakostranični trikotnik.
+Če poznamo kot v trikotniku, označimo ga z $\alpha$, lahko določimo utež $w_1$ kot $w_1 = \text{cos} \alpha$.
+Celoten krog lahko tedaj predstavimo kot zlepek večih takih krožnih lokov. 
+
+\begin{figure}[ht!]\label{slika:krogpodelih}
+    \centering
+    \includegraphics[width=60mm]{krog_po_delih.png}
+    \caption{Celoten krog lahko sestavimo iz treh racionalnih kvadratičnih B\'ezierjevih krivulj. Slika je povzeta po \cite{farin}.}
+\end{figure}
+\noindent
+Na sliki \ref{slika:krogpodelih} je prikazan primer, ko je kot $\alpha$ velik 60 stopinj, torej velja $w_1 = \frac{1}{2}$. V tem primeru je krog sestavljen iz treh enakih krožnih lokov.
+\\
+
+Namesto, da krožnico opisujemo z zlepkom krivulj, bi jo želeli opisati z eno samo racionalno krivuljo čim nižje stopnje.
+\\
+Nadalje si najprej oglejmo formalno definicijo krožnice v racionalni B\'ezierjevi obliki in problem iskanja racionalne krivulje čim nižje stopnje, ki opiše krožnico, reducirajmo na lažjega.
+
+\subsection{Formulacija krožnice v racionalni B\'ezierjevi obliki}
 Krožnico lahko opišemo kot racionalno B\'ezierjevo krivuljo $C(t)=(X(t),Y(t))$ s pomočjo projekcije krivulje $\tilde{C}(t)=(\tilde{X}(t), \tilde{Y(t)}, W(t))$ na ravnino $w=1$. 
 Enačbo krožnice v $\mathbb{R}^2$ lahko zapišemo kot
-$$X(t)^2+Y(t)^2=1.$$
-Koordinate točk zamenjamo s koordinatami prostora $\mathbb{R}^3$, ki smo jih dobili s projekcijo na ravnino $w=1$, da dobimo
+$$X(t)^2+Y(t)^2=1$$
+Koordinate točk zamenjamo s koordinatami prostora $\mathbb{R}^3$, ki smo jih dobili s projekcijo na ravnino $w=1$.
 $$\left(\frac{\tilde{X}(t)}{W(t)}\right)^2+\left(\frac{\tilde{Y}(t)}{W(t)}\right)^2=1$$
-$$\Rightarrow \tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0.$$
-Vidimo, da enačba predstavlja enačbo stožca. Torej, s projekcijo krivulje, ki leži na stožcu, na ravnino $w=1$ dobimo krožnico $C(t)$.
-SLIKA, MATLAB?
-tle še manjka \\
-
-Krožnico bi radi opisali z racionalno B\'ezierjevo krivuljo in ne z zlepkom krivulj. Poiskali bomo najmanjšo stopnjo krivulje, s katero lahko opišemo krožnico. 
+$$\tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0$$
+Zadnja enačba predstavlja enačbo stožca. Vidimo, da racionalna krivulja $C(t)$ eksaktno opiše krožnico kot projekcijo krivulje $\tilde{C}(t)$ (ki leži na stožcu) na ravnino $w = 1$.
+\\
+\\
+SLIKA stožca
+\\
+\\
+Iskanje racionalne krivulje čim nižje stopnje, ki eksaktno opiše celotno krožnico, lahko torej prevedemo na problem iskanja krivulje, ki leži na stožcu. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
