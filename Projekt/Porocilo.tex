@@ -56,15 +56,18 @@ v racionalni B\'ezierjevi obliki
 \author{Sara Bizjak in Urša Blažič}
 \date{\today}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
 \maketitle
 
-\section{Povzetek}
-
 \section{Uvod}
+V seminarski nalogi so predstavljene krožnice in ostale stožnice v racionalni B\'ezierjevi obliki. Med tem ko so stožnice na splošno omenjene le v grobem, pa se v krožnice bolj poglobimo in jih podamo natančneje.
+
+Organizacija članka.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Racionalne B\'ezierjeve krivulje}
 
@@ -80,22 +83,48 @@ $w = 0$ pa predstavljajo točke v neskončnosti.
 $$\boldsymbol{r}(t)=\frac{\mathlarger{\sum}_{i=0}^n w_i\boldsymbol{b}_iB_i^n(t)}{\mathlarger{\sum}_{i=0}^n w_iB_i^n(t)},$$
 kjer so $\boldsymbol{b}_i$ kontrolne točke krivulje, $w_i\in\mathbb{R}^d$ uteži, $B_i^n$ pa $i$-ti Bernsteinov bazni polinom stopnje~$n$.
 \end{definicija}
+ 
+Krivuljo lahko brez škode za splošnost reparametriziramo tako, da sta $w_0$ in $w_n$ enaka $1$. Taki obliki pravimo \emph{standardna oblika} racionalne B\'ezierjeve krivulje.
+Ostale uteži so prosti parametri, ki vplivajo na obliko krivulje. Racionalne B\'ezierjeve krivulje s pozitivnimi utežmi imajo podobne lastnosti kot polinomske. 
 
-Uteži predstavljajo dodatne proste parametre pri oblikovanju. Krivuljo lahko brez škode za splošnost reparametriziramo tako, da sta $w_0$ in $w_n$ enaka $1$, ostale uteži pa so prosti parametri. Taki obliki pravimo \emph{standardna oblika} racionalne B\'ezierjeve krivulje.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Stožnice v racionalni B\'ezierjevi obliki}
-Stožnice bomo zapisali s pomočjo krivulje stopnje $2$, zato bo kontrolni poligon sestavljen iz treh kontrolni točk. Ker lahko izberemo uteži v standardni obliki, velja: $$w_0=w_3=1,\,w_2=w.$$
+Stožnice bomo zapisali s pomočjo krivulje stopnje $2$, zato bo kontrolni poligon sestavljen iz treh kontrolni točk. Ker lahko izberemo uteži v standardni obliki, velja: 
+$$w_0=w_2=1,\,w_1=w,$$
+kjer je $w_1$ prosta utež.
+\\
 Stožnice lahko zapišemo v racionalni B\'ezierjevi obliki kot 
 $$\boldsymbol{r}(t)=\frac{\boldsymbol{b}_0\cdot B_0^2+w\cdot\boldsymbol{b}_1\cdot B_1^2+\boldsymbol{b}_2\cdot B_2^2}{ B_0^2+w\cdot B_1^2+ B_2^2}\,\, t\in[0,1],$$
 kjer so $\boldsymbol{b}_0, \boldsymbol{b}_1, \boldsymbol{b}_2 \in \mathbb{R}^2$ kontrolne točke krivulje, $w$ utež, vezana na kontrolno točko $\boldsymbol{b}_1$, $B_i^2,\,i=~0,1,2,$ pa Bernsteinovi bazni polinomi:
+
 \begin{align*}
 B_0^2(t) &= (1-t)^2 \\
 B_1^2(t) &= 2t\cdot(1-t) \\
 B_2^2(t) &= t^2 \\
 \end{align*}
 
+Ker uteži, kot je že bilo omenjeno, izbiramo v standardni obliki, je srednja utež $w_1$ prosti parameter, ki vpliva na obliko krivulje. Če utež $w_1$ povečujemo, se krivulja približuje kontrolni točki $b_1$ kot je prikazano na sliki \ref{slika:w1}.
+
+\begin{figure}[ht!]\label{slika:w1}
+    \centering
+    \includegraphics[width=50mm]{vecanje_w1.png}
+    \caption{Krivulji na obeh slikah sta v standardni obliki, torej velja $w_0 = w_2 = 1$. Sliki prikazujeta večanje uteži $w_1$, to je približevanje krivulje k kontrolni točki $b_1$. Slika je povzeta po \cite{farin}.}
+\end{figure}
+
 %With this representation,the type of conic is characterized by the value of the middle weight,w:r(t)is an ellipse whenw<1, aparabola whenw=1 and a hyperbola whenw>1. Also, whenwis negative,r(t)is the complementarysegment of the original conic segment (see (Lee, 1987) and (Farin, 1993))
 
+Spreminjanjae uteži $w_1$ in vpliv na obliko krivuljo lahko klasificiramo v tri skupine. Če je $w_1 < 1$, ima krivulja obliko elipse, če je $w_1 = 1$ je krivulja parabola, za $w_1 > 1$ pa dobimo hiperbolo. Omenjeni trije tipi krivulj so prikazani na sliki \ref{slika:klasifikacija}.
+
+\begin{figure}[ht!]\label{slika:klasifikacija}
+    \centering
+    \includegraphics[width=60mm]{tri_oblike.png}
+    \caption{Klasifikacije krivulje glede na spreminjanje srednje uteži $w_1$. Slika je povzeta po \cite{farin}.}
+\end{figure}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Racionalna B\'ezierjeva krivulja za krožnico}
 Krožnico lahko opišemo kot racionalno B\'ezierjevo krivuljo $C(t)=(X(t),Y(t))$ s pomočjo projekcije krivulje $\tilde{C}(t)=(\tilde{X}(t), \tilde{Y(t)}, W(t))$ na ravnino $w=1$. 
@@ -110,6 +139,8 @@ tle še manjka \\
 
 Krožnico bi radi opisali z racionalno B\'ezierjevo krivuljo in ne z zlepkom krivulj. Poiskali bomo najmanjšo stopnjo krivulje, s katero lahko opišemo krožnico. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{ Kvadratična krivulja}
 Pokazali bomo, da racionalna kvadratična krivulja ne more opisati celotne krožnice. Vse neracionalne kvadratične B\'ezierjeve krivulje so parabole, vse parabole pa dobimo kot presek stožca z ravnino, ki je vzporedna eni od nosilk stožca. Ko ravnino, s katero presekamo stožec, premikamo proti nosilki stožca, opazimo, da bo krožni lok v projekciji  na ravnino opisal vedno večji kot, torej smo vedno bližje polnemu krogu. Ko pa naredimo presek ravnine z nosilko stožca, je presek premica, ki se v projekciji slika v eno točko. Krožnice zato ne moremo zapisati s kvadratično racionalno krivuljo. 
 
@@ -122,10 +153,14 @@ Opazimo, da lahko s parabolo zapišemo krožne loke, ki jih lahko opišemo z nas
 kjer je $\theta$ polovični kot krožnega loka. Če izberemo samo pozitivne uteži ($\cos{\theta}>0$), je $C(t)$ manj kot $180^{\circ}$, če pa je srednja utež enaka $0$ ($\cos{\theta}=0$), je $C(t)$ točno $180^{\circ}$. ??
 % Za prvo in zadnjo točko si izberemo točki, ki ležita na krožnici, srednjo točko pa zaradi simetrije izberemo na polovičnem kotu med njima. Pri tem izberemo take uteži, da zadoščajo enačbi stožca. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Kubična krivulja}
 Pokazali bomo, da tudi racionalna kubična krivulja ne more opisati celotne krožnice. \\
 Za kontrolni poligon potrebujemo štiri kontrolne točke. S krivuljo interpoliramo prvo in zadnjo kontrolno točko, izberemo ju na stožcu.
 ????
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Krivulja 4.~stopnje}
 Da bomo dobili vse krivulje, v enačbo za stožec $\tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0$ vstavimo ??? \\
@@ -184,9 +219,12 @@ $$-\frac{3}{2}w_2<\tilde{x}_1<\frac{3}{2}w_2.$$
 
 TUKI BI BLO FAJN DAT ŠE KAK PRIMER - SO V ČLANKU
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Kubični B\'ezierjev krožni lok}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{thebibliography}{99}
 \bibitem{chou}
