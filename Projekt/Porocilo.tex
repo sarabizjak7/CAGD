@@ -86,7 +86,8 @@ kjer so $\boldsymbol{b}_i$ kontrolne točke krivulje, $w_i\in\mathbb{R}^d$ utež
 \end{definicija}
  
 Krivuljo lahko brez škode za splošnost reparametriziramo tako, da sta $w_0$ in $w_n$ enaka $1$. Taki obliki pravimo \emph{standardna oblika} racionalne B\'ezierjeve krivulje.
-Ostale uteži so prosti parametri, ki vplivajo na obliko krivulje -- s povečanjem enega izmed $w_i$ se krivulja približa ustreznemu $\boldsymbol{b}_i$. Racionalne B\'ezierjeve krivulje s pozitivnimi utežmi imajo podobne lastnosti kot polinomske. 
+Ostale uteži so prosti parametri, ki vplivajo na obliko krivulje -- s povečanjem enega izmed $w_i$ se krivulja približa ustreznemu $\boldsymbol{b}_i$. Racionalne B\'ezierjeve krivulje s pozitivnimi utežmi imajo podobne lastnosti kot polinomske. \\
+Povzeto po \cite{knez}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -98,7 +99,7 @@ $$ w_1=w,$$
 kjer je $w_1$ prosta utež.
 \\
 Stožnice lahko zapišemo v racionalni B\'ezierjevi obliki kot 
-$$\boldsymbol{r}(t)=\frac{\boldsymbol{b}_0\cdot B_0^2+w\cdot\boldsymbol{b}_1\cdot B_1^2+\boldsymbol{b}_2\cdot B_2^2}{ B_0^2+w\cdot B_1^2+ B_2^2}\,\, t\in[0,1],$$
+$$\boldsymbol{r}(t)=\frac{\boldsymbol{b}_0\cdot B_0^2+w\cdot\boldsymbol{b}_1\cdot B_1^2+\boldsymbol{b}_2\cdot B_2^2}{ B_0^2+w\cdot B_1^2+ B_2^2},\,\,\, t\in[0,1],$$
 kjer so $\boldsymbol{b}_0, \boldsymbol{b}_1, \boldsymbol{b}_2 \in \mathbb{R}^2$ kontrolne točke krivulje, $w$ utež, vezana na kontrolno točko $\boldsymbol{b}_1$, $B_i^2,\,i=~0,1,2,$ pa Bernsteinovi bazni polinomi:
 
 \begin{align*}
@@ -107,21 +108,23 @@ B_1^2(t) &= 2t\cdot(1-t) \\
 B_2^2(t) &= t^2 \\
 \end{align*}
 
-Ker uteži, kot že omenjeno, izbiramo v standardni obliki, je srednja utež $w_1$ prosti parameter, ki vpliva na obliko krivulje. Če utež $w_1$ povečujemo, se krivulja približuje kontrolni točki $b_1$ kot je prikazano na sliki \ref{slika:w1}.
+Ker uteži, kot že omenjeno, izbiramo v standardni obliki, je srednja utež $w_1$ prosti parameter, ki vpliva na obliko krivulje. Če utež $w_1$ povečujemo, se krivulja približuje kontrolni točki $b_1$, kot je prikazano na sliki \ref{slika:w1}.
 
-\begin{figure}[ht!]\label{slika:w1}
+\begin{figure}[ht!]
     \centering
     \includegraphics[width=70mm]{vecanje_w1.png}
-    \caption{Krivulji na obeh slikah sta v standardni obliki, torej velja $w_0 = w_2 = 1$. Sliki prikazujeta večanje uteži $w_1$, to je približevanje krivulje k kontrolni točki $b_1$. Slika je povzeta po \cite{farin}.}
+    \caption{Krivulji na obeh slikah sta v standardni obliki, torej velja $w_0 = w_2 = 1$. Sliki prikazujeta večanje uteži $w_1$, to je približevanje krivulje h kontrolni točki $b_1$. Slika je povzeta po \cite{farin}.}
+    \label{slika:w1}
 \end{figure}
 
 \newpage
-Spreminjanjae uteži $w_1$ in vpliv na obliko krivuljo lahko klasificiramo v tri skupine. Če je $w_1 < 1$, ima krivulja obliko elipse, če je $w_1 = 1$ je krivulja parabola, za $w_1 > 1$ pa dobimo hiperbolo. Omenjeni trije tipi krivulj so prikazani na sliki \ref{slika:klasifikacija}.
+Spreminjanje uteži $w_1$ in vpliv na obliko krivulje lahko klasificiramo v tri skupine. Če je $w_1 < 1$, ima krivulja obliko elipse, če je $w_1 = 1$, je krivulja parabola, za $w_1 > 1$ pa dobimo hiperbolo. Omenjeni trije tipi krivulj so prikazani na sliki \ref{slika:klasifikacija}.
 
-\begin{figure}[ht!]\label{slika:klasifikacija}
+\begin{figure}[ht!]
     \centering
     \includegraphics[width=70mm]{tri_oblike.png}
     \caption{Klasifikacije krivulje glede na spreminjanje srednje uteži $w_1$ pri predpostavki, da velja $w_0 = w_2 = 1$. Slika je povzeta po \cite{farin}.}
+    \label{slika:klasifikacija}
 \end{figure}
 \noindent
 Ena izmed najpomembnejših stožnic je krog, zato mu v nadaljevanju posvetimo več pozornosti.
@@ -137,10 +140,11 @@ Naj kvadratična krivulja z utežjo $w_1 < 1$ opiše krožni lok. Ker je krog si
 Če poznamo kot v trikotniku, označimo ga z $\alpha$, lahko določimo utež $w_1$ kot $w_1 = \text{cos} \alpha$.
 Celoten krog lahko tedaj predstavimo kot zlepek večih takih krožnih lokov. 
 
-\begin{figure}[ht!]\label{slika:krogpodelih}
+\begin{figure}[ht!]
     \centering
     \includegraphics[width=60mm]{krog_po_delih.png}
     \caption{Celoten krog lahko sestavimo iz treh racionalnih kvadratičnih B\'ezierjevih krivulj. Slika je povzeta po \cite{farin}.}
+    \label{slika:krogpodelih}
 \end{figure}
 \noindent
 Na sliki \ref{slika:krogpodelih} je prikazan primer, ko je kot $\alpha$ velik 60 stopinj, torej velja $w_1 = \frac{1}{2}$. V tem primeru je krog sestavljen iz treh enakih krožnih lokov.
@@ -151,13 +155,13 @@ Namesto, da krožnico opisujemo z zlepkom krivulj, bi jo želeli opisati z eno s
 Nadalje si najprej oglejmo formalno definicijo krožnice v racionalni B\'ezierjevi obliki in problem iskanja racionalne krivulje čim nižje stopnje, ki opiše krožnico, reducirajmo na lažjega.
 
 \subsection{Formulacija krožnice v racionalni B\'ezierjevi obliki}
-Krožnico lahko opišemo kot racionalno B\'ezierjevo krivuljo $C(t)=(X(t),Y(t))$ s pomočjo projekcije krivulje $\tilde{C}(t)=(\tilde{X}(t), \tilde{Y(t)}, W(t))$ na ravnino $w=1$. 
+Krožnico lahko opišemo kot racionalno B\'ezierjevo krivuljo $\boldsymbol{C}(t)=(X(t),Y(t))$ s pomočjo projekcije krivulje $\boldsymbol{\tilde{C}}(t)=(\tilde{X}(t), \tilde{Y(t)}, W(t))$ na ravnino $w=1$. 
 Enačbo krožnice v $\mathbb{R}^2$ lahko zapišemo kot
-$$X(t)^2+Y(t)^2=1$$
+$$X(t)^2+Y(t)^2=1.$$
 Koordinate točk zamenjamo s koordinatami prostora $\mathbb{R}^3$, ki smo jih dobili s projekcijo na ravnino $w=1$.
 $$\left(\frac{\tilde{X}(t)}{W(t)}\right)^2+\left(\frac{\tilde{Y}(t)}{W(t)}\right)^2=1$$
 $$\tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0$$
-Zadnja enačba predstavlja enačbo stožca. Vidimo, da racionalna krivulja $C(t)$ eksaktno opiše krožnico kot projekcijo krivulje $\tilde{C}(t)$ (ki leži na stožcu) na ravnino $w = 1$.
+Zadnja enačba predstavlja enačbo stožca. Vidimo, da racionalna krivulja $\boldsymbol{C}(t)$ eksaktno opiše krožnico kot projekcijo krivulje $\boldsymbol{\tilde{C}}(t)$ (ki leži na stožcu) na ravnino $w = 1$.
 
 \begin{figure}[ht!]
     \begin{minipage}{0.5\textwidth}
@@ -177,9 +181,10 @@ V naslednjih podpoglavjih bomo preučili B\'ezierjeve krivulje, ki tvorijo celot
 Še posebej nas bodo zanimale take krivulje, ki imajo same pozitivne uteži, saj bo take krivulje tudi lažje implementirati.
 \\
 Začeli bomo s kvadratično B\'ezierjevo krivuljo in nadaljevali s krivuljami z naraščajočim polinomskim redom.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{ Kvadratična krivulja}
+\subsection{ Kvadratična krivulja}\label{kvadraticna}
 Pokazali bomo, da racionalna kvadratična krivulja ne more opisati celotne krožnice. Do tega nas privede enostaven razmislek. 
 Vse neracionalne kvadratične B\'ezierjeve krivulje so parabole, vse parabole pa dobimo kot presek stožca z ravnino, ki je vzporedna eni od nosilk stožca. 
 \begin{figure}[ht!]
@@ -202,9 +207,9 @@ Krožnice zato ne moremo zapisati s kvadratično racionalno krivuljo.
 \noindent
 Opazimo pa, da lahko s parabolo zapišemo krožne loke, ki jih opišemo z naslednjim kontrolnim poligonom:
 \begin{align*}
-\boldsymbol{\tilde{P}}_0 &= (cos\theta, -sin\theta, 1)\\
-\boldsymbol{\tilde{P}}_1 &= (1, 0, cos\theta)\\
-\boldsymbol{\tilde{P}}_2 &= (cos\theta, sin\theta, 1),
+\boldsymbol{\tilde{P}}_0 &= (\cos{\theta}, -\sin{\theta}, 1)\\
+\boldsymbol{\tilde{P}}_1 &= (1, 0, \cos{\theta})\\
+\boldsymbol{\tilde{P}}_2 &= (\cos \theta, \sin\theta, 1),
 \end{align*}
 kjer je $\theta$ polovični kot krožnega loka. 
 % Če izberemo samo pozitivne uteži ($\cos{\theta}>0$), je $C(t)$ manj kot $180^{\circ}$, če pa je srednja utež enaka $0$ ($\cos{\theta}=0$), je $C(t)$ točno $180^{\circ}$. ??
@@ -214,12 +219,12 @@ kjer je $\theta$ polovični kot krožnega loka.
 
 \subsection{Kubična krivulja}
 Pokazali bomo, da tudi racionalna kubična krivulja ne more opisati celotne krožnice. \\
-Denimo, da jo lahko, in da je krivulja $\tilde{C}(t)$, ko jo preslikamo na ravnino $w = 1$, torej $C(t)$, krožnica.
+Denimo, da jo lahko, in da je krivulja $\boldsymbol{\tilde{C}}(t)$, ko jo preslikamo na ravnino $w = 1$, torej $\boldsymbol{C}(t)$, krožnica.
 Za kontrolni poligon izberemo štiri kontrolne točke, označimo jih $\boldsymbol{b}_0, \boldsymbol{b}_1, \boldsymbol{b}_2, \boldsymbol{b}_3$. Ker gre krivulja skozi prvo in zadnjo kontrolno točko, ju izberemo na stožcu.
 Vemo, da so racionalne kubične krivulje sklenjene, zato se bosta ti dve kontrolni točki ob projekciji na ravnino $w = 1$ preslikali v isto točko. 
 Zato lahko za prvo in zadnjo kontrolno točko $\boldsymbol{b}_0$ in $\boldsymbol{b}_3$ izberemo kar isto točko, ki že leži na ravnini $w = 1$. 
-Ker krivulja $\tilde{C}(t)$ leži na stožcu, mora tangetna na krivuljo v točki $\boldsymbol{b}_0$ (in hkrati tudi $\boldsymbol{b}_3$) ležati na tangetni ravnini stožca v tej isti točki.
-Iz tega sledi, da tudi kontrolni točki $\boldsymbol{b}_1$ in $\boldsymbol{b}_2$ ležita na tangetni ravnini. Vemo, da je presek tangetne ravnine s stožcem premica, torej je krivulja $C(t)$ točka.
+Ker krivulja $\boldsymbol{\tilde{C}}(t)$ leži na stožcu, mora tangetna na krivuljo v točki $\boldsymbol{b}_0$ (in hkrati tudi $\boldsymbol{b}_3$) ležati na tangetni ravnini stožca v tej isti točki.
+Iz tega sledi, da tudi kontrolni točki $\boldsymbol{b}_1$ in $\boldsymbol{b}_2$ ležita na tangetni ravnini. Vemo, da je presek tangetne ravnine s stožcem premica, torej je krivulja $\boldsymbol{C}(t)$ točka.
 Tako pridemo do zaključka, da tudi kubične krivulje ne morejo opisati celotne krožnice.
 \begin{figure}[ht!]
     \begin{minipage}{0.5\textwidth}
@@ -274,7 +279,7 @@ Ker mora biti $\alpha$ pozitivno število, mora veljati
 $$w_2>-\frac{1}{3}$$
 in
 $$-\left(\frac{3w_2+1}{2}\right)^{\frac{1}{2}}<\tilde{x}_1<\left(\frac{3w_2+1}{2}\right)^{\frac{1}{2}}$$
-Vidimo, da zaradi $\boldsymbol{\tilde{P}}_1$ in $\boldsymbol{\tilde{P}}_3$ nikoli ne dobimo kvartične B\'ezierjeve krivulje z vsemi pozitivnimi utežmi. \\
+Vidimo, da zaradi $\boldsymbol{\tilde{P}}_1$ in $\boldsymbol{\tilde{P}}_3$ nikoli ne dobimo B\'ezierjeve krivulje 4.~stopnje z vsemi pozitivnimi utežmi. \\
 Če izberemo $\tilde{x}_1=0$, dobimo  
 \begin{align*}
 \boldsymbol{\tilde{P}}_0 &= (1,0,1) \\
@@ -302,10 +307,10 @@ $$ \tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0.$$
 Ko enačimo koeficiente $B_i^6(t),\,i=0\ldots6$ z $0$ dobimo sedem enačb.\\
 Spomnimo se, da smo pri kvadratični krivulji izbrali za prvo in zadnjo točko dve točki, ki ležita na krožnici, srednjo točko pa na polovičnem kotu med njima. Tudi tu lahko predpostavimo, da sta prva in zadnja točka na krožnici:
 \begin{align*}
-\boldsymbol{\tilde{P}}_0 &= (cos(\theta), -sin(\theta), 1)\\
-\boldsymbol{\tilde{P}}_3 &= (cos(\theta), sin(\theta), 1),
+\boldsymbol{\tilde{P}}_0 &= (\cos \theta, -\sin \theta, 1)\\
+\boldsymbol{\tilde{P}}_3 &= (\cos \theta, \sin \theta, 1),
 \end{align*}
-kjer je $\theta$ polovica krožnega loka.  S tem se nam sedem enačb poenostavi v pet enačb:
+kjer je $\theta$ polovični kot krožnega loka.  S tem se nam sedem enačb poenostavi v pet enačb:
 \begin{align*}
 w_1 = \tilde{x_1}\cos{\theta} - \tilde{y_1} \sin{\theta}   \\
 w_2 = \tilde{x_2}\cos{\theta} + \tilde{y_2} \sin{\theta}   \\
@@ -317,7 +322,7 @@ w_2 = \tilde{x_2}\cos{\theta} + \tilde{y_2} \sin{\theta}   \\
 
 PRIMER ZA $\theta=\pi/2$ ???
 
-Ko je kot $\theta$ spremenljivka, je iz zgornjega sistema enačb težko dobiti eksplicitno rešitev. V nadaljevanju si bomo ogledali drugačen pristop za iskanje kubičnih B\'ezierjevih krožnih lokov, pomagali si bomo z spodnjim izrekom.
+Ker je kot $\theta$ spremenljivka, je iz zgornjega sistema enačb težko dobiti eksplicitno rešitev. Zato si bomo v nadaljevanju ogledali drugačen pristop za iskanje kubičnih B\'ezierjevih krožnih lokov, pomagali si bomo z spodnjim izrekom.
 
 \begin{izrek}
 Če je krivulja
@@ -329,10 +334,48 @@ omejena za $t\in [-\infty,\infty]$ in so $\tilde{X}(t),\tilde{Y}(t)$ in $W(t)$ p
 Najdemo ga v \cite{chou}.
 \end{proof}
 
+\noindent
 Iz izreka sledi, da so edini možni kubični B\'ezierjevi krožni loki oblike
 $$\boldsymbol{C}(t)=\frac{(\tilde{X}(t),\tilde{Y}(t))(aB_0^1(t)+bB_1^1(t))}{W(t)(aB_0^1(t)+bB_1^1(t))},$$
 kjer je $$\frac{(\tilde{X}(t),\tilde{Y}(t))}{W(t)}$$
-kvadratični krožni lok.
+kvadratični krožni lok.\\
+\noindent
+Za kontrolni poligon kvadratičnega krožnega loka izberemo
+\begin{align*}
+\boldsymbol{\tilde{P}}_0 &= (\cos{\theta}, -\sin{\theta}, 1)\\
+\boldsymbol{\tilde{P}}_1 &= (\sqrt{w_2}, 0,\sqrt{w_2} \cos{\theta})\\
+\boldsymbol{\tilde{P}}_2 &= (w_2\cos \theta, w_2 \sin\theta, w_2),
+\end{align*}
+kjer je $\theta$ polovični kot krožnega loka. Tu so kontrolne točke izbrane podobno kot v \ref{kvadraticna}, kjer je sedaj $w_2$ prosta utež.
+Za $w_0'$ in $w_3'$ mora veljati
+\begin{align*}
+w_0'&=a \\
+w_3'&=bw_2
+\end{align*}
+Brez škode za splošnost lahko uteži postavimo v standardno obliko, torej sta $w_0'$ in $w_3'$ enaki $1$. Iz tega sledi
+$$ a=1 \quad \text{ in } \quad w_2=\frac{1}{b}.$$
+Iz tega sledi, da so kontrolne točke kubičnega B\'ezierjevega krožnega loka enake
+\begin{align*}
+\boldsymbol{\tilde{P}}_0 &= (\cos{\theta}, -\sin{\theta}, 1)\\
+\boldsymbol{\tilde{P}}_1 &= \left ( \left (\frac{2}{3\sqrt{b}}+\frac{b\cos \theta}{3}\right ),-\frac{b \sin \theta}{3},\left (\frac{2\cos \theta}{3\sqrt{b}}+\frac{b}{3}\right )\right )\\
+\boldsymbol{\tilde{P}}_2 &= \left ( \left (\frac{\cos \theta}{3b}+\frac{2\sqrt{b}}{3}\right ),\frac{\sin \theta}{3b},\left (\frac{2\sqrt{b}\cos \theta}{3}+\frac{1}{3b}\right )\right )\\
+\boldsymbol{\tilde{P}}_3 &= (\cos \theta, \sin\theta, 1),
+\end{align*}
+Ker želimo imeti nenegativne uteži, mora veljati še
+$$\frac{2\cos \theta}{3\sqrt{b}}+\frac{b}{3}\geq0$$
+in
+$$\frac{2\sqrt{b}\cos \theta}{3}+\frac{1}{3b}\geq0.$$
+Iz tega sledi
+$$\cos \theta \geq -\frac{b^{3/2}}{2}\quad\text{ in }\quad \cos  \theta \geq -\frac{1}{2b^{3/2}}.$$
+Označimo $\beta=b^{3/2}$ in si oglejmo funkciji $y=-\frac{\beta}{2}$ in $y=-\frac{1}{2\beta}$.\\
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=80mm]{graf.png}
+    \caption{Grafa funkcij $y=-\frac{\beta}{2}$ in $y=-\frac{1}{2\beta}$ Slika je povzeta po \cite{chou}.}
+    \label{slika:graf}
+\end{figure}
+\\
+Maksimalen kot $\theta$ dosežemo pri $b=1$, in sicer $\theta=120^{\circ}$. Ker je $\theta$ polovični kot krožnega loka, je maksimalen krožni lok, ki ga lahko opišemo s kubično B\'ezierjevo krivuljo z nenegativnimi utežmi enak $240^{\circ}$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{thebibliography}{99}
