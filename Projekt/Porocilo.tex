@@ -207,9 +207,9 @@ Krožnice zato ne moremo zapisati s kvadratično racionalno krivuljo.
 \noindent
 Opazimo pa, da lahko s parabolo zapišemo krožne loke, ki jih opišemo z naslednjim kontrolnim poligonom:
 \begin{align*}
-\boldsymbol{\tilde{P}}_0 &= (\cos{\theta}, -\sin{\theta}, 1)\\
-\boldsymbol{\tilde{P}}_1 &= (1, 0, \cos{\theta})\\
-\boldsymbol{\tilde{P}}_2 &= (\cos \theta, \sin\theta, 1),
+\boldsymbol{\tilde{b}}_0 &= (\cos{\theta}, -\sin{\theta}, 1)\\
+\boldsymbol{\tilde{b}}_1 &= (1, 0, \cos{\theta})\\
+\boldsymbol{\tilde{b}}_2 &= (\cos \theta, \sin\theta, 1),
 \end{align*}
 kjer je $\theta$ polovični kot krožnega loka. 
 % Če izberemo samo pozitivne uteži ($\cos{\theta}>0$), je $C(t)$ manj kot $180^{\circ}$, če pa je srednja utež enaka $0$ ($\cos{\theta}=0$), je $C(t)$ točno $180^{\circ}$. ??
@@ -241,15 +241,21 @@ Tako pridemo do zaključka, da tudi kubične krivulje ne morejo opisati celotne 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Krivulja 4.~stopnje}
-Da bomo dobili vse krivulje, v enačbo za stožec $\tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0$ vstavimo ??? \\
-Bernsteinove bazne polinome $B_i^8(t),\,i=0,\ldots,8$ enačimo z $0$ in dobimo devet enačb.
-Brez škode za splošnost vzamemo $\boldsymbol{\tilde{P}}_0 =\boldsymbol{\tilde{P}}_4 = (1,0,1)$. Ker $\boldsymbol{\tilde{P}}_1$ in $\boldsymbol{\tilde{P}}_3$ ležita v tangentni ravnini $\boldsymbol{\tilde{P}}_0$, velja $\tilde{x}_1=w_1$ in $\tilde{x}_3=w_3$ (saj imamo ravnino $x=w$). Devet enačb se nam tako reducira v pet enačb:
+Da bomo dobili vse krivulje, v enačbo za stožec $\tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0$ vstavimo 
+\begin{align*}
+\tilde{X}(t) &= \tilde{x}_0\cdot B_0^4(t)+\tilde{x}_1\cdot B_1^4(t)+ \tilde{x}_2\cdot B_2^4(t) + \tilde{x}_3\cdot B_3^4(t) +\tilde{x}_4\cdot B_4^4(t)   \\
+\tilde{Y}(t) &=\tilde{y}_0\cdot B_0^4(t)+\tilde{y}_1\cdot B_1^4(t)+\tilde{y}_2\cdot B_2^4(t) + \tilde{y}_3\cdot B_3^4(t) + \tilde{y}_4\cdot B_4^4(t)   
+\end{align*}
+V enačbi sta $\tilde{X}(t)$ in $\tilde{Y}(t)$ kvadrirana, zato bomo morali med seboj množiti Bernsteinove bazne polinome. Izpeljemo lahko, da velja
+$$B_i^n(t)\cdot B_j^m(t)=\frac{\binom{n}{i} \cdot \binom{m}{j}}{\binom{n+m}{i+j}}B_{i+j}^{n+m}(t).$$
+Ker smo med seboj množili Bernsteinove bazne polinome stopnje 4, dobimo Bernsteinove bazne polinome stopnje 8. Ker so baza prostora, bo enakost veljala, ko bo seštevek koeficientov pred $i$-tim baznim polinomom enak 0. Iz tega dobimo devet enačb.
+Brez škode za splošnost vzamemo $\boldsymbol{\tilde{b}}_0 =\boldsymbol{\tilde{b}}_4 = (1,0,1)$. Ker $\boldsymbol{\tilde{b}}_1$ in $\boldsymbol{\tilde{b}}_3$ ležita v tangentni ravnini $\boldsymbol{\tilde{b}}_0$, velja $\tilde{x}_1=w_1$ in $\tilde{x}_3=w_3$ (saj imamo ravnino $x=w$). Devet enačb se nam tako reducira v pet enačb:
 \begin{align*}
 \tilde{y}_3 &=- \tilde{y}_1 \\
 \tilde{x}_3 &= - \tilde{x}_1 \\
 3\tilde{x}_2 + 4\tilde{y}_1^2 - 3w_2 &= 0 \\
 \tilde{x}_1\tilde{x}_2 + \tilde{y}_1\tilde{y}_2  - \tilde{x}_1w_2 &= 0 \\
-9\tilde{x}_2^2 - 8\tilde{y}_1^2 + 9\tilde{y}_2^2 - 9w_2^2&= 0 \\
+9\tilde{x}_2^2 - 8\tilde{y}_1^2 + 9\tilde{y}_2^2 - 9w_2^2&= 0 
 \end{align*}
 Iz zadnjih treh enačb dobimo dve možni rešitvi
 \begin{align*}
@@ -268,25 +274,25 @@ kjer je $\alpha=(\frac{3w_2}{2}-\tilde{x}_1^2+\frac{1}{2})^{\frac{1}{2}}$
 
 Dobimo naslednje kontrolne točke, ki tvorijo kontrolni poligon:
 \begin{align*}
-\boldsymbol{\tilde{P}}_0 &= (1,0,1) \\
-\boldsymbol{\tilde{P}}_1 &= (\tilde{x}_1,\pm\alpha,\tilde{x}_1) \\
-\boldsymbol{\tilde{P}}_2 &= (-\frac{3w_2-4\tilde{x}_1^2+2}{3},\pm\frac{4}{3}\tilde{x}_1\alpha,w_2) \\
-\boldsymbol{\tilde{P}}_3 &= (-\tilde{x}_1,\mp\alpha,-\tilde{x}_1) \\
-\boldsymbol{\tilde{P}}_4 &= (1,0,1)
+\boldsymbol{\tilde{b}}_0 &= (1,0,1) \\
+\boldsymbol{\tilde{b}}_1 &= (\tilde{x}_1,\pm\alpha,\tilde{x}_1) \\
+\boldsymbol{\tilde{b}}_2 &= (-\frac{3w_2-4\tilde{x}_1^2+2}{3},\pm\frac{4}{3}\tilde{x}_1\alpha,w_2) \\
+\boldsymbol{\tilde{b}}_3 &= (-\tilde{x}_1,\mp\alpha,-\tilde{x}_1) \\
+\boldsymbol{\tilde{b}}_4 &= (1,0,1)
 \end{align*}
 
 Ker mora biti $\alpha$ pozitivno število, mora veljati
 $$w_2>-\frac{1}{3}$$
 in
 $$-\left(\frac{3w_2+1}{2}\right)^{\frac{1}{2}}<\tilde{x}_1<\left(\frac{3w_2+1}{2}\right)^{\frac{1}{2}}$$
-Vidimo, da zaradi $\boldsymbol{\tilde{P}}_1$ in $\boldsymbol{\tilde{P}}_3$ nikoli ne dobimo B\'ezierjeve krivulje 4.~stopnje z vsemi pozitivnimi utežmi. \\
+Vidimo, da zaradi $\boldsymbol{\tilde{b}}_1$ in $\boldsymbol{\tilde{b}}_3$ nikoli ne dobimo B\'ezierjeve krivulje 4.~stopnje z vsemi pozitivnimi utežmi. \\
 Če izberemo $\tilde{x}_1=0$, dobimo  
 \begin{align*}
-\boldsymbol{\tilde{P}}_0 &= (1,0,1) \\
-\boldsymbol{\tilde{P}}_1 &= (0,\pm (\frac{1}{2}+\frac{3}{2}w_2)^{1/2},0) \\
-\boldsymbol{\tilde{P}}_2 &= (-\frac{2}{3}-w_2,0,w_2) \\
-\boldsymbol{\tilde{P}}_3 &= (0,\mp(\frac{1}{2}+\frac{3}{2}w_2)^{1/2},0) \\
-\boldsymbol{\tilde{P}}_4 &= (1,0,1)
+\boldsymbol{\tilde{b}}_0 &= (1,0,1) \\
+\boldsymbol{\tilde{b}}_1 &= (0,\pm (\frac{1}{2}+\frac{3}{2}w_2)^{1/2},0) \\
+\boldsymbol{\tilde{b}}_2 &= (-\frac{2}{3}-w_2,0,w_2) \\
+\boldsymbol{\tilde{b}}_3 &= (0,\mp(\frac{1}{2}+\frac{3}{2}w_2)^{1/2},0) \\
+\boldsymbol{\tilde{b}}_4 &= (1,0,1)
 \end{align*}
 V tem primeru nimamo več negativnih uteži, dobimo pa dve uteži, ki sta enaki $0$. Povedali smo že, da točka z $w=0$ pri projekciji na ravnino $w=1$ predstavlja točko v neskončnosti. Torej, imamo dve točki v neskončnosti, tega pa pri implementaciji ne želimo. \\
 Kako bi se znebili negativnih uteži? Tako, da dani krivulji dvignemo stopnjo. \\%takrat se bo naš kontrolni poligon pomaknil bližje h krivulji.
@@ -295,20 +301,29 @@ $$-\frac{1}{4}<\tilde{x}_1<\frac{1}{4}$$
 in
 $$-\frac{3}{2}w_2<\tilde{x}_1<\frac{3}{2}w_2.$$
 
-TUKI BI BLO FAJN DAT ŠE KAK PRIMER - SO V ČLANKU
+\noindent
+Primer višanja stopnje: Izberemo $w_2=\frac{1}{3}$. -- MATLAB
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Kubični B\'ezierjev krožni lok}
 
 
-Radi bi poiskali vse kubične B\'ezierjeve krožne loke. Da dobimo pogoje za kontrolne točke B\'ezierjeve krivulje, podobno kot prej krivuljo vstavimo v enačbo stožca
+Zanima nas, kakšne krožne loke lahko opišemo s kubično racionalno B\'ezierjevo krivuljo pri pogoju, da so vse uteži nenegativne. Da dobimo pogoje za kontrolne točke B\'ezierjeve krivulje, krivuljo vstavimo v enačbo stožca
 $$ \tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0.$$
-Ko enačimo koeficiente $B_i^6(t),\,i=0\ldots6$ z $0$ dobimo sedem enačb.\\
+\begin{align*}
+\tilde{X}(t) &= \tilde{x}_0\cdot B_0^3(t)+\tilde{x}_1\cdot B_1^3(t)+ \tilde{x}_2\cdot B_2^3(t) + \tilde{x}_3\cdot B_3^3(t) = \\
+&= \tilde{x}_0\cdot (1-t)^3+\tilde{x}_1\cdot3t(1-t)^2+\tilde{x}_2\cdot3t^2(1-t)+\tilde{x}_3\cdot t^3 \\
+\tilde{Y}(t) &=\tilde{y}_0\cdot B_0^3(t)+\tilde{y}_1\cdot B_1^3(t)+\tilde{y}_2\cdot B_2^3(t) + \tilde{y}_3\cdot B_3^3(t) = \\
+&= \tilde{y}_0\cdot (1-t)^3+\tilde{y}_1\cdot3t(1-t)^2+\tilde{y}_2\cdot3t^2(1-t)+\tilde{y}_3\cdot t^3 
+\end{align*}
+$\tilde{X}(t)$ in $\tilde{Y}(t)$ kvadriramo, zato moramo množiti Bernsteinove bazne polinome:
+$$B_i^n(t)\cdot B_j^m(t)=\frac{\binom{n}{i} \cdot \binom{m}{j}}{\binom{n+m}{i+j}}B_{i+j}^{n+m}(t).$$
+Iz tega dobimo sedem enačb.\\
 Spomnimo se, da smo pri kvadratični krivulji izbrali za prvo in zadnjo točko dve točki, ki ležita na krožnici, srednjo točko pa na polovičnem kotu med njima. Tudi tu lahko predpostavimo, da sta prva in zadnja točka na krožnici:
 \begin{align*}
-\boldsymbol{\tilde{P}}_0 &= (\cos \theta, -\sin \theta, 1)\\
-\boldsymbol{\tilde{P}}_3 &= (\cos \theta, \sin \theta, 1),
+\boldsymbol{\tilde{b}}_0 &= (\cos \theta, -\sin \theta, 1)\\
+\boldsymbol{\tilde{b}}_3 &= (\cos \theta, \sin \theta, 1),
 \end{align*}
 kjer je $\theta$ polovični kot krožnega loka.  S tem se nam sedem enačb poenostavi v pet enačb:
 \begin{align*}
@@ -320,9 +335,20 @@ w_2 = \tilde{x_2}\cos{\theta} + \tilde{y_2} \sin{\theta}   \\
 3\tilde{x_2}^2 \sin^2{\theta}+ 3\tilde{y_2}^2 \cos^2{\theta}+ 4\tilde{y_1} \sin{\theta}  - 6\tilde{x_2}\tilde{y_2}\sin{\theta} \cos{\theta}  = 0 
 \end{align*}
 
-PRIMER ZA $\theta=\pi/2$ ???
+\begin{zgled}
+Poglejmo si, kaj je rešitev sistema, če vzamemo $\theta= \frac{\pi}{2}$. Dobimo naslednje kontrolne točke:
 
-Ker je kot $\theta$ spremenljivka, je iz zgornjega sistema enačb težko dobiti eksplicitno rešitev. Zato si bomo v nadaljevanju ogledali drugačen pristop za iskanje kubičnih B\'ezierjevih krožnih lokov, pomagali si bomo z spodnjim izrekom.
+\begin{align*}
+\boldsymbol{\tilde{b}}_0 &= (0,-1,1) \\
+\boldsymbol{\tilde{b}}_1 &= (\frac{2\alpha}{3},-\frac{1}{3\alpha^2},\frac{1}{3\alpha^2}) \\
+\boldsymbol{\tilde{b}}_2 &= (\frac{2}{3\alpha},\frac{\alpha^2}{3},\frac{\alpha^2}{3}) \\
+\boldsymbol{\tilde{b}}_3 &= (0,1,1)
+\end{align*}
+kjer je $\alpha=\frac{3\tilde{x_1}}{2}$. \\
+Kontrolne točke v 2D so $\boldsymbol{b}_0 = (0,-1),\boldsymbol{b}_1 = (2\alpha^3,-1),\boldsymbol{b}_2 = (\frac{2}{\alpha^3},1),\boldsymbol{b}_3 = (0,1)$.
+\end{zgled}
+
+Ker je kot $\theta$ spremenljivka, je iz zgornjega sistema enačb težko dobiti eksplicitno rešitev. Zato si bomo v nadaljevanju ogledali drugačen pristop za iskanje kubičnih B\'ezierjevih krožnih lokov, pomagali si bomo s spodnjim izrekom.
 
 \begin{izrek}
 Če je krivulja
@@ -339,27 +365,35 @@ Iz izreka sledi, da so edini možni kubični B\'ezierjevi krožni loki oblike
 $$\boldsymbol{C}(t)=\frac{(\tilde{X}(t),\tilde{Y}(t))(aB_0^1(t)+bB_1^1(t))}{W(t)(aB_0^1(t)+bB_1^1(t))},$$
 kjer je $$\frac{(\tilde{X}(t),\tilde{Y}(t))}{W(t)}$$
 kvadratični krožni lok.\\
+
 \noindent
 Za kontrolni poligon kvadratičnega krožnega loka izberemo
 \begin{align*}
-\boldsymbol{\tilde{P}}_0 &= (\cos{\theta}, -\sin{\theta}, 1)\\
-\boldsymbol{\tilde{P}}_1 &= (\sqrt{w_2}, 0,\sqrt{w_2} \cos{\theta})\\
-\boldsymbol{\tilde{P}}_2 &= (w_2\cos \theta, w_2 \sin\theta, w_2),
+\boldsymbol{\tilde{b}}_0 &= (\cos{\theta}, -\sin{\theta}, 1)\\
+\boldsymbol{\tilde{b}}_1 &= (\sqrt{w_2}, 0,\sqrt{w_2} \cos{\theta})\\
+\boldsymbol{\tilde{b}}_2 &= (w_2\cos \theta, w_2 \sin\theta, w_2),
 \end{align*}
 kjer je $\theta$ polovični kot krožnega loka. Tu so kontrolne točke izbrane podobno kot v \ref{kvadraticna}, kjer je sedaj $w_2$ prosta utež.
+
+Imenovalec kubične krivulje je enak
+\begin{align*}
+W(t)(aB_0^1(t)+bB_1^1(t)) &= aB_0^3(t)+\left ( \frac{2}{3}a\sqrt{w_2}\cos \theta +\frac{b}{3} \right )B_1^3(t)+ \\
+&+ \left ( \frac{aw_2}{3} + \frac{2}{3}b\sqrt{w_2}\cos \theta  \right )B_2^3(t) + bw_2B_3^3(t)
+\end{align*}
+
 Za $w_0'$ in $w_3'$ mora veljati
 \begin{align*}
 w_0'&=a \\
 w_3'&=bw_2
 \end{align*}
-Brez škode za splošnost lahko uteži postavimo v standardno obliko, torej sta $w_0'$ in $w_3'$ enaki $1$. Iz tega sledi
+Brez škode za splošnost lahko uteži postavimo v standardno obliko, tedaj sta $w_0'$ in $w_3'$ enaki $1$. Iz tega sledi
 $$ a=1 \quad \text{ in } \quad w_2=\frac{1}{b}.$$
 Iz tega sledi, da so kontrolne točke kubičnega B\'ezierjevega krožnega loka enake
 \begin{align*}
-\boldsymbol{\tilde{P}}_0 &= (\cos{\theta}, -\sin{\theta}, 1)\\
-\boldsymbol{\tilde{P}}_1 &= \left ( \left (\frac{2}{3\sqrt{b}}+\frac{b\cos \theta}{3}\right ),-\frac{b \sin \theta}{3},\left (\frac{2\cos \theta}{3\sqrt{b}}+\frac{b}{3}\right )\right )\\
-\boldsymbol{\tilde{P}}_2 &= \left ( \left (\frac{\cos \theta}{3b}+\frac{2\sqrt{b}}{3}\right ),\frac{\sin \theta}{3b},\left (\frac{2\sqrt{b}\cos \theta}{3}+\frac{1}{3b}\right )\right )\\
-\boldsymbol{\tilde{P}}_3 &= (\cos \theta, \sin\theta, 1),
+\boldsymbol{\tilde{b}}_0 &= (\cos{\theta}, -\sin{\theta}, 1)\\
+\boldsymbol{\tilde{b}}_1 &= \left ( \left (\frac{2}{3\sqrt{b}}+\frac{b\cos \theta}{3}\right ),-\frac{b \sin \theta}{3},\left (\frac{2\cos \theta}{3\sqrt{b}}+\frac{b}{3}\right )\right )\\
+\boldsymbol{\tilde{b}}_2 &= \left ( \left (\frac{\cos \theta}{3b}+\frac{2\sqrt{b}}{3}\right ),\frac{\sin \theta}{3b},\left (\frac{2\sqrt{b}\cos \theta}{3}+\frac{1}{3b}\right )\right )\\
+\boldsymbol{\tilde{b}}_3 &= (\cos \theta, \sin\theta, 1),
 \end{align*}
 Ker želimo imeti nenegativne uteži, mora veljati še
 $$\frac{2\cos \theta}{3\sqrt{b}}+\frac{b}{3}\geq0$$
@@ -377,7 +411,7 @@ Označimo $\beta=b^{3/2}$ in si oglejmo funkciji $y=-\frac{\beta}{2}$ in $y=-\fr
 \\
 Maksimalen kot $\theta$ dosežemo pri $b=1$, in sicer $\theta=120^{\circ}$. Ker je $\theta$ polovični kot krožnega loka, je maksimalen krožni lok, ki ga lahko opišemo s kubično B\'ezierjevo krivuljo z nenegativnimi utežmi enak $240^{\circ}$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newpage
 \begin{thebibliography}{99}
 \bibitem{chou}
 J.~J.~Chou, \emph{Higher order Bezier circles}, Computer-Aided Design \textbf{27 (4)} (1995) 303--309

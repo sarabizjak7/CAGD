@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.1)  4 JAN 2021 09:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.1)  5 JAN 2021 06:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -614,70 +614,79 @@ Overfull \hbox (1.13809pt too wide) in paragraph at lines 236--237
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 243.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 248.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 248.
 [6 </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_tang_1.png (PNG copy)> </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_tang_2.png (PNG copy)>]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 281.
+(babel)             in language  on input line 282.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 281.
+(babel)             in language  on input line 282.
  [7]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 309.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 302.
+(hyperref)                removing `\textasciicaron' on input line 309.
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 321.
+(babel)             in language  on input line 313.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 321.
+(babel)             in language  on input line 313.
 [8]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 356.
+(babel)             in language  on input line 346.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 356.
+(babel)             in language  on input line 346.
  [9]
-<graf.png, id=133, 324.46219pt x 307.1475pt>
+Underfull \hbox (badness 10000) in paragraph at lines 366--368
+
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 382.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 382.
+[10]
+<graf.png, id=136, 324.46219pt x 307.1475pt>
 File: graf.png Graphic file (type png)
 <use graf.png>
-Package pdftex.def Info: graf.png  used on input line 373.
+Package pdftex.def Info: graf.png  used on input line 407.
 (pdftex.def)             Requested size: 227.62204pt x 215.47981pt.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 414.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 380.
- [10 </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/graf.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 393.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 393.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 393.
+(babel)             in language  on input line 414.
  [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 393.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 427.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 427.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 427.
+ [12 </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/graf.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 427.
  (/Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/Porocilo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 393.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 393.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 427.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 427.
 Package rerunfilecheck Info: File `Porocilo.out' has not changed.
 (rerunfilecheck)             Checksum: EEB2B3208E5EB16D0D53599A6E05EF8C;705.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 393.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 427.
  ) 
 Here is how much of TeX's memory you used:
- 10167 strings out of 492649
- 148280 string characters out of 6129623
- 286537 words of memory out of 5000000
+ 10168 strings out of 492649
+ 148287 string characters out of 6129623
+ 287537 words of memory out of 5000000
  13816 multiletter control sequences out of 15000+600000
  78070 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,13n,40p,437b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/Porocilo.pdf" (11 pages, 765571 bytes).
+Output written on "/Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/Porocilo.pdf" (12 pages, 772935 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
+ 214 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
