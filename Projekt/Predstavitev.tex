@@ -25,6 +25,16 @@
 \usepackage{enumitem}
 \usepackage{pifont}
 
+\theoremstyle{definition} 
+\newtheorem*{definicija}{Definicija}
+\newtheorem*{trditev}{Trditev}
+
+
+\theoremstyle{plain} 
+\newtheorem*{izrek}{Izrek}
+\newtheorem*{posledica}{Posledica}
+\newtheorem*{zgled}{Zgled}
+\newtheorem{primer}{Primer}
 
 
 \definecolor{bostonuniversityred}{rgb}{0.8, 0.0, 0.0}
@@ -45,32 +55,220 @@ v racionalni B\'ezierjevi obliki
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% SARA
 \begin{frame}
-\frametitle{Racionalne B\'ezierjeve krivulje}
-
+\frametitle{Motivacija}
+    
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=60mm]{krog_po_delih.png}
+    \caption{Krog, sestavljen iz treh racionalnih kvadratičnih B\'ezierjevih krivulj.}
+    \label{slika:krogpodelih}
+\end{figure}
+    
+    
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% URŠA
+\begin{frame}
+\frametitle{Racionalna B\'ezierjeva krivulja}
+    
+    stopnje $n$ v $\mathbb{R}^d$ je projekcija polinomske B\'ezierjeve krivulje stopnje $n$ v $\mathbb{R}^{d+1}$ na hiperravnino $w=1$, kjer točko v  $\mathbb{R}^{d+1}$  označimo z
+    $$(\boldsymbol{x},w)=(x_1,x_2,\dots,x_d,w).$$
+    Projekcija je definirana kot
+    $$(\boldsymbol{x},w)\mapsto (\frac{1}{w}\boldsymbol{x},1).$$
+
+    \begin{definicija}
+        \emph{Racionalna B\'ezierjeva krivulja} stopnje $n$ je podana s parametrizacijo $\boldsymbol{r}:[0,1]\rightarrow \mathbb{R}^d$, določeno s predpisom
+        $$\boldsymbol{r}(t)=\frac{\mathlarger{\sum}_{i=0}^n w_i\boldsymbol{b}_iB_i^n(t)}{\mathlarger{\sum}_{i=0}^n w_iB_i^n(t)}.$$      
+    \end{definicija}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% URŠA
 \begin{frame}
 \frametitle{Stožnice v racionalni B\'ezierjevi obliki}
 
+    Za uteži velja: $ w_0 = w_2 = 1$ in $w_1 = w$.
+    \\
+    Stožnice lahko zapišemo v racionalni B\'ezierjevi obliki kot 
+    $$\boldsymbol{r}(t)=\frac{\boldsymbol{b}_0\cdot B_0^2+w\cdot\boldsymbol{b}_1\cdot B_1^2+\boldsymbol{b}_2\cdot B_2^2}{ B_0^2+w\cdot B_1^2+ B_2^2},\,\,\, t\in[0,1].$$
+
+    \begin{figure}[ht!]
+        \centering
+        \includegraphics[width=50mm]{tri_oblike.png}
+    \end{figure}
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% SARA
 \begin{frame}
-\frametitle{Racionalna B\'ezierjeva krivulja za krožnico}
+\frametitle{Krožnica v racionalni B\'ezierjevi obliki}
 
-\begin{itemize}
-    \item Kvadratična krivulja
-    \item Kubična krivulja
-    \item Krivulja 4. stopnje
-\end{itemize}
+Krožnico lahko opišemo kot racionalno B\'ezierjevo krivuljo 
+$$\boldsymbol{C}(t)=(X(t),Y(t))$$ 
+s pomočjo projekcije krivulje 
+$$\boldsymbol{\tilde{C}}(t)=(\tilde{X}(t), \tilde{Y(t)}, W(t))$$ 
+na ravnino $w=1$. 
+
+$$\tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0$$
 
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SARA
+\begin{frame}
+\frametitle{Krožnica v racionalni B\'ezierjevi obliki}
+    
+\begin{figure}[ht!]
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=50mm]{stozec.png}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=50mm]{stozec_1.png}
+    \end{minipage}\hfill
+    \caption{Krožnico lahko dobimo kot projekcijo krivulje, ki leži na stožcu, na ravnino $w = 1$.}
+\end{figure}
+
+\end{frame}
+    
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SARA
+\begin{frame}
+\frametitle{Kvadratična krivulja}
+    
+\begin{figure}[ht!]
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=60mm]{stozec_presek_1.png}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=60mm]{stozec_presek_2.png}
+    \end{minipage}\hfill
+    \caption{Presek stožca z ravnino, ki je vzporedna njegovi nosilki. Na sliki je ravnina obarvana z rumeno barvo, nosilka pa z rdečo.}
+\end{figure}
+    
+\end{frame}
+    
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SARA
+\begin{frame}
+\frametitle{Kvadratična krivulja}
+    
+    S parabolo lahko zapišemo krožne loke, ki jih opišemo z naslednjim kontrolnim poligonom:
+    \begin{align*}
+        \boldsymbol{\tilde{b}}_0 &= (\cos{\theta}, -\sin{\theta}, 1)\\
+        \boldsymbol{\tilde{b}}_1 &= (1, 0, \cos{\theta})\\
+        \boldsymbol{\tilde{b}}_2 &= (\cos \theta, \sin\theta, 1),
+    \end{align*}
+    kjer je $\theta$ polovični kot krožnega loka. 
+
+    
+\end{frame}
+    
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SARA
+\begin{frame}
+    \frametitle{Kubična krivulja}
+    
+    \begin{figure}[ht!]
+        \begin{minipage}{0.5\textwidth}
+            \centering
+            \includegraphics[width=60mm]{stozec_tang_1.png}
+        \end{minipage}\hfill
+        \begin{minipage}{0.5\textwidth}
+            \centering
+            \includegraphics[width=60mm]{stozec_tang_2.png}
+        \end{minipage}\hfill
+        \caption{Presek stožca s tangentno ravnino. Presek je premica, ki je enaka eni od nosilk stožca.}
+    \end{figure}
+
+    
+\end{frame}
+    
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SARA
+\begin{frame}
+\frametitle{Krivulja 4. stopnje}
+    Enačbe:
+
+        \begin{align*}
+            \tilde{y}_3 &=- \tilde{y}_1 \\
+            \tilde{x}_3 &= - \tilde{x}_1 \\
+            3\tilde{x}_2 + 4\tilde{y}_1^2 - 3w_2 &= 0 \\
+            \tilde{x}_1\tilde{x}_2 + \tilde{y}_1\tilde{y}_2  - \tilde{x}_1w_2 &= 0 \\
+            9\tilde{x}_2^2 - 8\tilde{y}_1^2 + 9\tilde{y}_2^2 - 9w_2^2&= 0 
+        \end{align*}
+    
+\end{frame}
+    
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SARA
+\begin{frame}
+\frametitle{Krivulja 4. stopnje} 
+    Kontrolne točke:
+ 
+        \begin{align*}
+            \boldsymbol{\tilde{b}}_0 &= (1,0,1) \\
+            \boldsymbol{\tilde{b}}_1 &= (\tilde{x}_1,\pm\alpha,\tilde{x}_1) \\
+            \boldsymbol{\tilde{b}}_2 &= (-\frac{3w_2-4\tilde{x}_1^2+2}{3},\pm\frac{4}{3}\tilde{x}_1\alpha,w_2) \\
+            \boldsymbol{\tilde{b}}_3 &= (-\tilde{x}_1,\mp\alpha,-\tilde{x}_1) \\
+            \boldsymbol{\tilde{b}}_4 &= (1,0,1)
+        \end{align*}
+
+   
+   
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SARA
+\begin{frame}
+\frametitle{Krivulja 4. stopnje}
+    Kontrolne točka za $\tilde{x}_1=0$:
+
+        \begin{align*}
+            \boldsymbol{\tilde{b}}_0 &= (1,0,1) \\
+            \boldsymbol{\tilde{b}}_1 &= (0,\pm (\frac{1}{2}+\frac{3}{2}w_2)^{1/2},0) \\
+            \boldsymbol{\tilde{b}}_2 &= (-\frac{2}{3}-w_2,0,w_2) \\
+            \boldsymbol{\tilde{b}}_3 &= (0,\mp(\frac{1}{2}+\frac{3}{2}w_2)^{1/2},0) \\
+            \boldsymbol{\tilde{b}}_4 &= (1,0,1)
+        \end{align*}
+  
+    
+\end{frame}
+    
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% URŠA
+\begin{frame}
+    \frametitle{Kubični B\'ezierjevi loki}
+
+
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
