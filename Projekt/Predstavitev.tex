@@ -82,7 +82,7 @@ v racionalni B\'ezierjevi obliki
 
     \begin{definicija}
         \emph{Racionalna B\'ezierjeva krivulja} stopnje $n$ je podana s parametrizacijo $\boldsymbol{r}:[0,1]\rightarrow \mathbb{R}^d$, določeno s predpisom
-        $$\boldsymbol{r}(t)=\frac{\mathlarger{\sum}_{i=0}^n w_i\boldsymbol{b}_iB_i^n(t)}{\mathlarger{\sum}_{i=0}^n w_iB_i^n(t)}.$$      
+        $$\boldsymbol{r}(t)=\frac{\sum_{i=0}^n w_i\boldsymbol{b}_iB_i^n(t)}{\sum_{i=0}^n w_iB_i^n(t)}.$$      
     \end{definicija}
 
 \end{frame}
@@ -219,7 +219,6 @@ $$\tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0$$
             \tilde{x}_1\tilde{x}_2 + \tilde{y}_1\tilde{y}_2  - \tilde{x}_1w_2 &= 0 \\
             9\tilde{x}_2^2 - 8\tilde{y}_1^2 + 9\tilde{y}_2^2 - 9w_2^2&= 0 
         \end{align*}
-    
 \end{frame}
     
     
@@ -237,7 +236,8 @@ $$\tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0$$
             \boldsymbol{\tilde{b}}_3 &= (-\tilde{x}_1,\mp\alpha,-\tilde{x}_1) \\
             \boldsymbol{\tilde{b}}_4 &= (1,0,1)
         \end{align*}
-
+    
+        kjer je $\alpha=(\frac{3w_2}{2}-\tilde{x}_1^2+\frac{1}{2})^{\frac{1}{2}}$
    
    
 \end{frame}
@@ -266,10 +266,50 @@ $$\tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0$$
 % URŠA
 \begin{frame}
     \frametitle{Kubični B\'ezierjevi loki}
-
+    \begin{align*}
+        w_1 = \tilde{x_1}\cos{\theta} - \tilde{y_1} \sin{\theta}   \\
+        w_2 = \tilde{x_2}\cos{\theta} + \tilde{y_2} \sin{\theta}   \\
+        3\tilde{x_1}^2\sin^2{\theta} + 3\tilde{y_1}^2\cos^2{\theta} - 4\tilde{y_2} \sin{\theta}  + 6\tilde{x_1}\tilde{y_1} \sin{\theta} \cos{\theta} = 0 \\
+        9\tilde{x_1}\tilde{x_2}\sin^2{\theta} + 9\tilde{y_1}\tilde{x_2}\cos{\theta} \sin{\theta} - 9\tilde{x_1} \tilde{y_2} \cos{\theta} \sin{\theta}+ \\
+        + 9 (1 + \sin^2{\theta}) \tilde{y_1} \tilde{y_2} - 2\sin^2{\theta} = 0 \\
+        3\tilde{x_2}^2 \sin^2{\theta}+ 3\tilde{y_2}^2 \cos^2{\theta}+ 4\tilde{y_1} \sin{\theta}  - 6\tilde{x_2}\tilde{y_2}\sin{\theta} \cos{\theta}  = 0 
+    \end{align*}
+        
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% URŠA
+\begin{frame}
+    Edini možni kubični B\'ezierjevi krožni loki so oblike
+    $$\boldsymbol{C}(t)=\frac{(\tilde{X}(t),\tilde{Y}(t))(aB_0^1(t)+bB_1^1(t))}{W(t)(aB_0^1(t)+bB_1^1(t))},$$
+    kjer je $$\frac{(\tilde{X}(t),\tilde{Y}(t))}{W(t)}$$
+    kvadratični krožni lok.
+    Za kontrolni poligon kvadratičnega krožnega loka izberemo
+    \begin{align*}
+    \boldsymbol{\tilde{b}}_0 &= (\cos{\theta}, -\sin{\theta}, 1)\\
+    \boldsymbol{\tilde{b}}_1 &= (\sqrt{w_2}, 0,\sqrt{w_2} \cos{\theta})\\
+    \boldsymbol{\tilde{b}}_2 &= (w_2\cos \theta, w_2 \sin\theta, w_2),
+    \end{align*}
+    kjer je $\theta$ polovični kot krožnega loka. 
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% URŠA
+\begin{frame}
+Kontrolne točke kubičnega B\'ezierjevega krožnega loka:
+\begin{align*}
+\boldsymbol{\tilde{b}}_0 &= (\cos{\theta}, -\sin{\theta}, 1)\\
+\boldsymbol{\tilde{b}}_1 &= \left ( \left (\frac{2}{3\sqrt{b}}+\frac{b\cos \theta}{3}\right ),-\frac{b \sin \theta}{3},\left (\frac{2\cos \theta}{3\sqrt{b}}+\frac{b}{3}\right )\right )\\
+\boldsymbol{\tilde{b}}_2 &= \left ( \left (\frac{\cos \theta}{3b}+\frac{2\sqrt{b}}{3}\right ),\frac{\sin \theta}{3b},\left (\frac{2\sqrt{b}\cos \theta}{3}+\frac{1}{3b}\right )\right )\\
+\boldsymbol{\tilde{b}}_3 &= (\cos \theta, \sin\theta, 1),
+\end{align*}
+Nenegativne uteži:
+$$\cos \theta \geq -\frac{b^{3/2}}{2}\quad\text{ in }\quad \cos  \theta \geq -\frac{1}{2b^{3/2}}$$
+\end{frame}
 
 \end{document}

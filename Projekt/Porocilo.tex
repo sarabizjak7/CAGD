@@ -136,8 +136,8 @@ Ena izmed najpomembnejših stožnic je krog, zato mu v nadaljevanju posvetimo ve
 
 \subsection{Motivacija}
 
-Naj kvadratična krivulja z utežjo $w_1 < 1$ opiše krožni lok. Ker je krog simetričen, mora kontrolni poligon tvoriti enakostranični trikotnik.
-Če poznamo kot v trikotniku, označimo ga z $\alpha$, lahko določimo utež $w_1$ kot $w_1 = \text{cos} \alpha$.
+Naj kvadratična krivulja z utežjo $w_1 < 1$ opiše krožni lok. Ker je krog simetričen, mora kontrolni poligon tvoriti pravilni $n-$kotnik.
+Če poznamo kot v v liku, označimo ga z $\alpha$, lahko določimo utež $w_1$ kot $w_1 = \text{cos} \alpha$.
 Celoten krog lahko tedaj predstavimo kot zlepek večih takih krožnih lokov. 
 
 \begin{figure}[ht!]
@@ -147,7 +147,7 @@ Celoten krog lahko tedaj predstavimo kot zlepek večih takih krožnih lokov.
     \label{slika:krogpodelih}
 \end{figure}
 \noindent
-Na sliki \ref{slika:krogpodelih} je prikazan primer, ko je kot $\alpha$ velik 60 stopinj, torej velja $w_1 = \frac{1}{2}$. V tem primeru je krog sestavljen iz treh enakih krožnih lokov.
+Na sliki \ref{slika:krogpodelih} je prikazan primer, ko je kontrolni poligon enakostranični trikotnik, to pomeni, da je kot $\alpha$ velik 60 stopinj. Velja torej elja $w_1 = \frac{1}{2}$. V tem primeru je krog sestavljen iz treh enakih krožnih lokov.
 \\
 
 Namesto, da krožnico opisujemo z zlepkom krivulj, bi jo želeli opisati z eno samo racionalno krivuljo čim nižje stopnje.
@@ -280,7 +280,7 @@ Dobimo naslednje kontrolne točke, ki tvorijo kontrolni poligon:
 \boldsymbol{\tilde{b}}_3 &= (-\tilde{x}_1,\mp\alpha,-\tilde{x}_1) \\
 \boldsymbol{\tilde{b}}_4 &= (1,0,1)
 \end{align*}
-
+\noindent
 Ker mora biti $\alpha$ pozitivno število, mora veljati
 $$w_2>-\frac{1}{3}$$
 in
@@ -300,9 +300,42 @@ Pogoji, da ima taka krivulja same pozitivne uteži, so
 $$-\frac{1}{4}<\tilde{x}_1<\frac{1}{4}$$
 in
 $$-\frac{3}{2}w_2<\tilde{x}_1<\frac{3}{2}w_2.$$
+\begin{figure}[ht!]
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=80mm]{kriv4_1b.png}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=70mm]{kriv4_1c.png}
+    \end{minipage}\hfill
+    \caption{Primer krivulje 4. stopnje z dvema utežema enakima 0.}
+    \label{slika:kriv4}
+\end{figure}
+\begin{figure}[ht!]
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=80mm]{kriv4_2a.png}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=70mm]{kriv4_2c.png}
+    \end{minipage}\hfill
+    \caption{Primer iste krivulje stopnje 4. kot na sliki \ref{slika:kriv4}, le da je njena stopnja dvignjena. Krivulja ima vse uteži pozitivne. S temno modro barvo je označen poligon krivulje z dvignjeno stopnjo.}
+    \label{slika:kriv4a}
+\end{figure}
+\begin{figure}[ht!]
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=80mm]{kriv4_3a.png}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=80mm]{kriv4_3b.png}
+    \end{minipage}\hfill
+    \caption{Primer iste krivulje stopnje 4. kot na slikah \ref{slika:kriv4} in \ref{slika:kriv4a}. S svetlo modro barvo sta označena projecirana krivulja na ravnino $w = 1$ in njen kontrolni poligon.}
+\end{figure}
 
-\noindent
-Primer višanja stopnje: Izberemo $w_2=\frac{1}{3}$. -- MATLAB
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
