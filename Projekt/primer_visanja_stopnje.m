@@ -1,4 +1,4 @@
-% -- Primer višanja stopnje s geometrijsko interpretacijo -- %
+% -- Primer višanja stopnje z geometrijsko interpretacijo -- %
 
 w2 = 1/3;
 

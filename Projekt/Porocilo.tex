@@ -63,11 +63,14 @@ v racionalni B\'ezierjevi obliki
 \maketitle
 
 \section{Uvod}
-V seminarski nalogi so predstavljene krožnice in ostale stožnice v racionalni B\'ezierjevi obliki. Med tem ko so stožnice na splošno omenjene le v grobem, pa se v krožnice bolj poglobimo in jih podamo natančneje.
+V tem članku so predstavljene krožnice in ostale stožnice v racionalni B\'ezierjevi obliki. 
+Racionalne B\'ezierjevi krivulje so v kontekstu stožnic pomembne predvsem zato, ker -- v nasprotju s polinomskimi B\'ezierjevi krivuljami -- krožnico opišejo eksaktno. 
 
-Najprej se na splošno seznanimo z racionalnimi B\'ezierjevimi krivuljami in jih poslošimo na stožnice. Iz stožnic preidemo na krožnico in si jo natančeneje pogledamo. Ugotovimo, kako lahko dobimo sklenjeno krožnico z racionalno krivuljo čim nižje stopnje in jo konstruiramo.
-
-
+Najprej se na splošno seznanimo z racionalnimi B\'ezierjevimi krivuljami in njihovimi lasnotmi, ki jih v naslednjem poglavju poslošimo na stožnice. Iz stožnic preidemo na krožnico in jo natančneje formuliramo. 
+Ugotovimo, kako lahko dobimo sklenjeno krožnico z racionalno krivuljo čim nižje stopnje in jo konstruiramo.
+Za konec naredimo še pregled kubičnih B\'ezierjevih krožnih lokov.
+\\
+Formulacija racionalne B\'ezierjeve krivulje je povzeta po \cite{knez}, glavni članek za celotno obravnavo pa je \cite{chou}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Racionalne B\'ezierjeve krivulje}
@@ -87,7 +90,7 @@ kjer so $\boldsymbol{b}_i$ kontrolne točke krivulje, $w_i\in\mathbb{R}^d$ utež
  
 Krivuljo lahko brez škode za splošnost reparametriziramo tako, da sta $w_0$ in $w_n$ enaka $1$. Taki obliki pravimo \emph{standardna oblika} racionalne B\'ezierjeve krivulje.
 Ostale uteži so prosti parametri, ki vplivajo na obliko krivulje -- s povečanjem enega izmed $w_i$ se krivulja približa ustreznemu $\boldsymbol{b}_i$. Racionalne B\'ezierjeve krivulje s pozitivnimi utežmi imajo podobne lastnosti kot polinomske. \\
-Povzeto po \cite{knez}.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -147,11 +150,11 @@ Celoten krog lahko tedaj predstavimo kot zlepek večih takih krožnih lokov.
     \label{slika:krogpodelih}
 \end{figure}
 \noindent
-Na sliki \ref{slika:krogpodelih} je prikazan primer, ko je kontrolni poligon enakostranični trikotnik, to pomeni, da je kot $\alpha$ velik 60 stopinj. Velja torej elja $w_1 = \frac{1}{2}$. V tem primeru je krog sestavljen iz treh enakih krožnih lokov.
+Na sliki \ref{slika:krogpodelih} je prikazan primer, ko je kontrolni poligon enakostranični trikotnik -- to pomeni, da je kot $\alpha$ velik 60 stopinj. Velja torej $w_1 = \frac{1}{2}$. V tem primeru je krog sestavljen iz treh enakih krožnih lokov.
 \\
 
 Namesto, da krožnico opisujemo z zlepkom krivulj, bi jo želeli opisati z eno samo racionalno krivuljo čim nižje stopnje.
-\\
+
 Nadalje si najprej oglejmo formalno definicijo krožnice v racionalni B\'ezierjevi obliki in problem iskanja racionalne krivulje čim nižje stopnje, ki opiše krožnico, reducirajmo na lažjega.
 
 \subsection{Formulacija krožnice v racionalni B\'ezierjevi obliki}
@@ -203,8 +206,6 @@ Vse neracionalne kvadratične B\'ezierjeve krivulje so parabole, vse parabole pa
 Ko ravnino, s katero presekamo stožec, premikamo proti nosilki stožca, opazimo, da bo krožni lok v projekciji na ravnino opisal vedno večji kot, torej smo vedno bližje polnemu krogu. 
 Ko pa se ravnina, s katero stožec sekamo, in nosilka stožca ujameta, je njun presek premica, ki se v projekciji slika v eno točko. 
 Krožnice zato ne moremo zapisati s kvadratično racionalno krivuljo. 
-
-\noindent
 Opazimo pa, da lahko s parabolo zapišemo krožne loke, ki jih opišemo z naslednjim kontrolnim poligonom:
 \begin{align*}
 \boldsymbol{\tilde{b}}_0 &= (\cos{\theta}, -\sin{\theta}, 1)\\
@@ -267,7 +268,7 @@ in
 \begin{align*}
 \tilde{y}_1 &= -\alpha \\
 \tilde{x}_2 &=-\frac{3w_2-4\tilde{x}_1^2+2}{3}\\
-\tilde{y}_2 &= -\frac{4}{3}\tilde{x}_1\alpha
+\tilde{y}_2 &= -\frac{4}{3}\tilde{x}_1\alpha,
 \end{align*}
 
 kjer je $\alpha=(\frac{3w_2}{2}-\tilde{x}_1^2+\frac{1}{2})^{\frac{1}{2}}$
@@ -294,12 +295,16 @@ Vidimo, da zaradi $\boldsymbol{\tilde{b}}_1$ in $\boldsymbol{\tilde{b}}_3$ nikol
 \boldsymbol{\tilde{b}}_3 &= (0,\mp(\frac{1}{2}+\frac{3}{2}w_2)^{1/2},0) \\
 \boldsymbol{\tilde{b}}_4 &= (1,0,1)
 \end{align*}
-V tem primeru nimamo več negativnih uteži, dobimo pa dve uteži, ki sta enaki $0$. Povedali smo že, da točka z $w=0$ pri projekciji na ravnino $w=1$ predstavlja točko v neskončnosti. Torej, imamo dve točki v neskončnosti, tega pa pri implementaciji ne želimo. \\
-Kako bi se znebili negativnih uteži? Tako, da dani krivulji dvignemo stopnjo. \\%takrat se bo naš kontrolni poligon pomaknil bližje h krivulji.
+V tem primeru nimamo več negativnih uteži, dobimo pa dve uteži, ki sta enaki $0$. Povedali smo že, da točka z utežjo $0$ pri projekciji na ravnino $w=1$ predstavlja točko v neskončnosti. 
+Imamo torej dve točki v neskončnosti, tega pa pri implementaciji ne želimo, zato bi se negativnim utežem radi izognili.
+Negativnih uteži se lahko znebimo tako, da dani krivulji dvignemo stopnjo. \\%takrat se bo naš kontrolni poligon pomaknil bližje h krivulji.
 Pogoji, da ima taka krivulja same pozitivne uteži, so
 $$-\frac{1}{4}<\tilde{x}_1<\frac{1}{4}$$
 in
 $$-\frac{3}{2}w_2<\tilde{x}_1<\frac{3}{2}w_2.$$
+\noindent
+Poglejmo si, kako zgoraj opisano deluje na primeru.
+
 \begin{figure}[ht!]
     \begin{minipage}{0.5\textwidth}
         \centering
@@ -438,13 +443,24 @@ Označimo $\beta=b^{3/2}$ in si oglejmo funkciji $y=-\frac{\beta}{2}$ in $y=-\fr
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=80mm]{graf.png}
-    \caption{Grafa funkcij $y=-\frac{\beta}{2}$ in $y=-\frac{1}{2\beta}$ Slika je povzeta po \cite{chou}.}
+    \caption{Grafa funkcij $y=-\frac{\beta}{2}$ in $y=-\frac{1}{2\beta}$. Slika je povzeta po \cite{chou}.}
     \label{slika:graf}
 \end{figure}
 \\
 Maksimalen kot $\theta$ dosežemo pri $b=1$, in sicer $\theta=120^{\circ}$. Ker je $\theta$ polovični kot krožnega loka, je maksimalen krožni lok, ki ga lahko opišemo s kubično B\'ezierjevo krivuljo z nenegativnimi utežmi enak $240^{\circ}$.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
+
+\section{Zaključek}
+
+Obravnavali smo krožnico in krožni lok, ki smo ju predstavili kot Racionalno B\'ezierjevo krivuljo.
+Pri iskanju najmanjše stopnje take krivulje, ki eksaktno opiše krožnico, je bil problem pretvorjen na iskanje polinomske krivulje (v $\mathbb{R}^3$), ki leži na stožcu.
+Pokazali smo, da je najmanjša stopnja krivulje, ki opiše sklenjen krožni lok, stopnja 4, vendar taka krivulja nima vseh pozitivnih uteži. 
+Da smo pridobili le pozitivne uteži, smo dvignili stopnjo krivulje -- torej najnižja stopnja krivulje, s katero lahko eksaktno opišemo krožnico in ima pozitivne uteži, je stopnja 5. 
+Iz tega je sledila geometrijska interpretacija dviga stopnje krivulje in njene projekcije iz stožca na ravnino $w = 1$, tako da smo dobili krožnico s pripadajočim kontrolnim poligonom.
+Nadalje smo si ogledali še kubične B\'ezierjeve krožne loke in ugotovili, da je največji kot, ki ga z njimi lahko opišemo, velik 240 stopinj.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{thebibliography}{99}
 \bibitem{chou}
 J.~J.~Chou, \emph{Higher order Bezier circles}, Computer-Aided Design \textbf{27 (4)} (1995) 303--309
