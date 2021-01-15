@@ -54,27 +54,30 @@ backgroundcolor=\color{light-gray},
 v racionalni B\'ezierjevi obliki
 }
 \author{Sara Bizjak in Urša Blažič}
-\date{\today}
+\date{7.~januar 2021}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
 
 \maketitle
 
 \section{Uvod}
+\ \ \ \
 V tem članku so predstavljene krožnice in ostale stožnice v racionalni B\'ezierjevi obliki. 
-Racionalne B\'ezierjevi krivulje so v kontekstu stožnic pomembne predvsem zato, ker -- v nasprotju s polinomskimi B\'ezierjevi krivuljami -- krožnico opišejo eksaktno. 
+Racionalne B\'ezierjeve krivulje so v kontekstu stožnic pomembne predvsem zato, ker -- v nasprotju s polinomskimi B\'ezierjevimi krivuljami -- krožnico opišejo eksaktno. 
 
-Najprej se na splošno seznanimo z racionalnimi B\'ezierjevimi krivuljami in njihovimi lasnotmi, ki jih v naslednjem poglavju poslošimo na stožnice. Iz stožnic preidemo na krožnico in jo natančneje formuliramo. 
+Najprej se na splošno seznanimo z racionalnimi B\'ezierjevimi krivuljami in njihovimi lastnostmi, ki jih v naslednjem poglavju posplošimo na stožnice. Iz stožnic preidemo na krožnico in jo natančneje formuliramo. 
 Ugotovimo, kako lahko dobimo sklenjeno krožnico z racionalno krivuljo čim nižje stopnje in jo konstruiramo.
 Za konec naredimo še pregled kubičnih B\'ezierjevih krožnih lokov.
-\\
+
 Formulacija racionalne B\'ezierjeve krivulje je povzeta po \cite{knez}, glavni članek za celotno obravnavo pa je \cite{chou}.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Racionalne B\'ezierjeve krivulje}
-
+\ \ \ \
 Racionalna B\'ezierjeva krivulja stopnje $n$ v $\mathbb{R}^d$ je projekcija polinomske B\'ezierjeve krivulje stopnje $n$ v $\mathbb{R}^{d+1}$ na hiperravnino $w=1$, kjer točko v  $\mathbb{R}^{d+1}$  označimo z
 $$(\boldsymbol{x},w)=(x_1,x_2,\dots,x_d,w).$$
 Projekcija je definirana kot
@@ -95,6 +98,7 @@ Ostale uteži so prosti parametri, ki vplivajo na obliko krivulje -- s povečanj
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Stožnice v racionalni B\'ezierjevi obliki}
+\ \ \ \
 Stožnice bomo zapisali s pomočjo krivulje stopnje $2$, zato bo kontrolni poligon sestavljen iz treh kontrolni točk. Ker lahko izberemo uteži v standardni obliki, velja: 
 $$w_0=w_2=1 $$
 in
@@ -125,12 +129,12 @@ Spreminjanje uteži $w_1$ in vpliv na obliko krivulje lahko klasificiramo v tri 
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=70mm]{tri_oblike.png}
+    \includegraphics[width=65mm]{tri_oblike.png}
     \caption{Klasifikacije krivulje glede na spreminjanje srednje uteži $w_1$ pri predpostavki, da velja $w_0 = w_2 = 1$. Slika je povzeta po \cite{farin}.}
     \label{slika:klasifikacija}
 \end{figure}
-\noindent
-Ena izmed najpomembnejših stožnic je krog, zato mu v nadaljevanju posvetimo več pozornosti.
+
+Ena izmed najpomembnejših stožnic je krožnica, zato ji v nadaljevanju posvetimo več pozornosti.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -138,7 +142,7 @@ Ena izmed najpomembnejših stožnic je krog, zato mu v nadaljevanju posvetimo ve
 \section{Krožnica v racionalni B\'ezierjevi obliki}
 
 \subsection{Motivacija}
-
+\ \ \ \
 Naj kvadratična krivulja z utežjo $w_1 < 1$ opiše krožni lok. Ker je krog simetričen, mora kontrolni poligon tvoriti pravilni $n-$kotnik.
 Če poznamo kot v v liku, označimo ga z $\alpha$, lahko določimo utež $w_1$ kot $w_1 = \text{cos} \alpha$.
 Celoten krog lahko tedaj predstavimo kot zlepek večih takih krožnih lokov. 
@@ -150,14 +154,15 @@ Celoten krog lahko tedaj predstavimo kot zlepek večih takih krožnih lokov.
     \label{slika:krogpodelih}
 \end{figure}
 \noindent
-Na sliki \ref{slika:krogpodelih} je prikazan primer, ko je kontrolni poligon enakostranični trikotnik -- to pomeni, da je kot $\alpha$ velik 60 stopinj. Velja torej $w_1 = \frac{1}{2}$. V tem primeru je krog sestavljen iz treh enakih krožnih lokov.
+Na sliki \ref{slika:krogpodelih} je prikazan primer, ko je kontrolni poligon enakostranični trikotnik -- to pomeni, da je kot $\alpha$ velik 60 stopinj in $w_1 = \frac{1}{2}$. V tem primeru je krog sestavljen iz treh enakih krožnih lokov.
 \\
 
 Namesto, da krožnico opisujemo z zlepkom krivulj, bi jo želeli opisati z eno samo racionalno krivuljo čim nižje stopnje.
 
-Nadalje si najprej oglejmo formalno definicijo krožnice v racionalni B\'ezierjevi obliki in problem iskanja racionalne krivulje čim nižje stopnje, ki opiše krožnico, reducirajmo na lažjega.
+Nadalje si poglejmo formalno definicijo krožnice v racionalni B\'ezierjevi obliki in problem iskanja racionalne krivulje čim nižje stopnje, ki opiše krožnico, reducirajmo na lažjega.
 
 \subsection{Formulacija krožnice v racionalni B\'ezierjevi obliki}
+\ \ \ \
 Krožnico lahko opišemo kot racionalno B\'ezierjevo krivuljo $\boldsymbol{C}(t)=(X(t),Y(t))$ s pomočjo projekcije krivulje $\boldsymbol{\tilde{C}}(t)=(\tilde{X}(t), \tilde{Y(t)}, W(t))$ na ravnino $w=1$. 
 Enačbo krožnice v $\mathbb{R}^2$ lahko zapišemo kot
 $$X(t)^2+Y(t)^2=1.$$
@@ -180,14 +185,15 @@ Zadnja enačba predstavlja enačbo stožca. Vidimo, da racionalna krivulja $\bol
 \noindent
 Iskanje racionalne krivulje čim nižje stopnje, ki eksaktno opiše celotno krožnico, lahko torej prevedemo na problem iskanja krivulje, ki leži na stožcu. 
 \\
+
 V naslednjih podpoglavjih bomo preučili B\'ezierjeve krivulje, ki tvorijo celoten krog. 
 Še posebej nas bodo zanimale take krivulje, ki imajo same pozitivne uteži, saj bo take krivulje tudi lažje implementirati.
-\\
 Začeli bomo s kvadratično B\'ezierjevo krivuljo in nadaljevali s krivuljami z naraščajočim polinomskim redom.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{ Kvadratična krivulja}\label{kvadraticna}
+\ \ \ \
 Pokazali bomo, da racionalna kvadratična krivulja ne more opisati celotne krožnice. Do tega nas privede enostaven razmislek. 
 Vse neracionalne kvadratične B\'ezierjeve krivulje so parabole, vse parabole pa dobimo kot presek stožca z ravnino, ki je vzporedna eni od nosilk stožca. 
 \begin{figure}[ht!]
@@ -219,6 +225,7 @@ kjer je $\theta$ polovični kot krožnega loka.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Kubična krivulja}
+\ \ \ \
 Pokazali bomo, da tudi racionalna kubična krivulja ne more opisati celotne krožnice. \\
 Denimo, da jo lahko, in da je krivulja $\boldsymbol{\tilde{C}}(t)$, ko jo preslikamo na ravnino $w = 1$, torej $\boldsymbol{C}(t)$, krožnica.
 Za kontrolni poligon izberemo štiri kontrolne točke, označimo jih $\boldsymbol{b}_0, \boldsymbol{b}_1, \boldsymbol{b}_2, \boldsymbol{b}_3$. Ker gre krivulja skozi prvo in zadnjo kontrolno točko, ju izberemo na stožcu.
@@ -242,6 +249,7 @@ Tako pridemo do zaključka, da tudi kubične krivulje ne morejo opisati celotne 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Krivulja 4.~stopnje}
+\ \ \ \
 Da bomo dobili vse krivulje, v enačbo za stožec $\tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0$ vstavimo 
 \begin{align*}
 \tilde{X}(t) &= \tilde{x}_0\cdot B_0^4(t)+\tilde{x}_1\cdot B_1^4(t)+ \tilde{x}_2\cdot B_2^4(t) + \tilde{x}_3\cdot B_3^4(t) +\tilde{x}_4\cdot B_4^4(t)   \\
@@ -271,9 +279,9 @@ in
 \tilde{y}_2 &= -\frac{4}{3}\tilde{x}_1\alpha,
 \end{align*}
 
-kjer je $\alpha=(\frac{3w_2}{2}-\tilde{x}_1^2+\frac{1}{2})^{\frac{1}{2}}$
+kjer je $\alpha=(\frac{3w_2}{2}-\tilde{x}_1^2+\frac{1}{2})^{\frac{1}{2}}$.
 
-Dobimo naslednje kontrolne točke, ki tvorijo kontrolni poligon:
+\noindent Dobimo naslednje kontrolne točke, ki tvorijo kontrolni poligon:
 \begin{align*}
 \boldsymbol{\tilde{b}}_0 &= (1,0,1) \\
 \boldsymbol{\tilde{b}}_1 &= (\tilde{x}_1,\pm\alpha,\tilde{x}_1) \\
@@ -326,7 +334,7 @@ Poglejmo si, kako zgoraj opisano deluje na primeru.
         \centering
         \includegraphics[width=70mm]{kriv4_2c.png}
     \end{minipage}\hfill
-    \caption{Primer iste krivulje stopnje 4. kot na sliki \ref{slika:kriv4}, le da je njena stopnja dvignjena. Krivulja ima vse uteži pozitivne. S temno modro barvo je označen poligon krivulje z dvignjeno stopnjo.}
+    \caption{Primer iste krivulje kot na sliki \ref{slika:kriv4}, le da je njena stopnja dvignjena. Krivulja ima vse uteži pozitivne. S temno modro barvo je označen poligon krivulje z dvignjeno stopnjo.}
     \label{slika:kriv4a}
 \end{figure}
 \begin{figure}[ht!]
@@ -338,15 +346,14 @@ Poglejmo si, kako zgoraj opisano deluje na primeru.
         \centering
         \includegraphics[width=80mm]{kriv4_3b.png}
     \end{minipage}\hfill
-    \caption{Primer iste krivulje stopnje 4. kot na slikah \ref{slika:kriv4} in \ref{slika:kriv4a}. S svetlo modro barvo sta označena projecirana krivulja na ravnino $w = 1$ in njen kontrolni poligon.}
+    \caption{Primer iste krivulje kot na slikah \ref{slika:kriv4} in \ref{slika:kriv4a}. S svetlo modro barvo sta označena projecirana krivulja na ravnino $w = 1$ in njen kontrolni poligon.}
 \end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Kubični B\'ezierjev krožni lok}
-
-
+\ \ \ \
 Zanima nas, kakšne krožne loke lahko opišemo s kubično racionalno B\'ezierjevo krivuljo pri pogoju, da so vse uteži nenegativne. Da dobimo pogoje za kontrolne točke B\'ezierjeve krivulje, krivuljo vstavimo v enačbo stožca
 $$ \tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0.$$
 \begin{align*}
@@ -357,7 +364,8 @@ $$ \tilde{X}(t)^2+\tilde{Y}(t)^2-W(t)^2=0.$$
 \end{align*}
 $\tilde{X}(t)$ in $\tilde{Y}(t)$ kvadriramo, zato moramo množiti Bernsteinove bazne polinome:
 $$B_i^n(t)\cdot B_j^m(t)=\frac{\binom{n}{i} \cdot \binom{m}{j}}{\binom{n+m}{i+j}}B_{i+j}^{n+m}(t).$$
-Iz tega dobimo sedem enačb.\\
+Iz tega dobimo sedem enačb.
+
 Spomnimo se, da smo pri kvadratični krivulji izbrali za prvo in zadnjo točko dve točki, ki ležita na krožnici, srednjo točko pa na polovičnem kotu med njima. Tudi tu lahko predpostavimo, da sta prva in zadnja točka na krožnici:
 \begin{align*}
 \boldsymbol{\tilde{b}}_0 &= (\cos \theta, -\sin \theta, 1)\\
@@ -395,10 +403,9 @@ omejena za $t\in [-\infty,\infty]$ in so $\tilde{X}(t),\tilde{Y}(t)$ in $W(t)$ p
 \end{izrek}
 
 \begin{proof}
-Najdemo ga v \cite{chou}.
+Dokaz je dostopen v članku \cite{chou}.
 \end{proof}
 
-\noindent
 Iz izreka sledi, da so edini možni kubični B\'ezierjevi krožni loki oblike
 $$\boldsymbol{C}(t)=\frac{(\tilde{X}(t),\tilde{Y}(t))(aB_0^1(t)+bB_1^1(t))}{W(t)(aB_0^1(t)+bB_1^1(t))},$$
 kjer je $$\frac{(\tilde{X}(t),\tilde{Y}(t))}{W(t)}$$
@@ -411,14 +418,13 @@ Za kontrolni poligon kvadratičnega krožnega loka izberemo
 \boldsymbol{\tilde{b}}_1 &= (\sqrt{w_2}, 0,\sqrt{w_2} \cos{\theta})\\
 \boldsymbol{\tilde{b}}_2 &= (w_2\cos \theta, w_2 \sin\theta, w_2),
 \end{align*}
-kjer je $\theta$ polovični kot krožnega loka. Tu so kontrolne točke izbrane podobno kot v \ref{kvadraticna}, kjer je sedaj $w_2$ prosta utež.
-
+kjer je $\theta$ polovični kot krožnega loka. Tu so kontrolne točke izbrane podobno kot v \ref{kvadraticna}, kjer je $w_2$ sedaj prosta utež.
+\\
 Imenovalec kubične krivulje je enak
 \begin{align*}
 W(t)(aB_0^1(t)+bB_1^1(t)) &= aB_0^3(t)+\left ( \frac{2}{3}a\sqrt{w_2}\cos \theta +\frac{b}{3} \right )B_1^3(t)+ \\
 &+ \left ( \frac{aw_2}{3} + \frac{2}{3}b\sqrt{w_2}\cos \theta  \right )B_2^3(t) + bw_2B_3^3(t)
 \end{align*}
-
 Za $w_0'$ in $w_3'$ mora veljati
 \begin{align*}
 w_0'&=a \\
@@ -446,19 +452,20 @@ Označimo $\beta=b^{3/2}$ in si oglejmo funkciji $y=-\frac{\beta}{2}$ in $y=-\fr
     \caption{Grafa funkcij $y=-\frac{\beta}{2}$ in $y=-\frac{1}{2\beta}$. Slika je povzeta po \cite{chou}.}
     \label{slika:graf}
 \end{figure}
-\\
-Maksimalen kot $\theta$ dosežemo pri $b=1$, in sicer $\theta=120^{\circ}$. Ker je $\theta$ polovični kot krožnega loka, je maksimalen krožni lok, ki ga lahko opišemo s kubično B\'ezierjevo krivuljo z nenegativnimi utežmi enak $240^{\circ}$.
+
+Maksimalen kot $\theta$ dosežemo pri $b=1$, in sicer $\theta=120^{\circ}$. Ker je $\theta$ polovični kot krožnega loka, je maksimalen krožni lok, ki ga lahko opišemo s kubično B\'ezierjevo krivuljo z nenegativnimi utežmi, enak $240^{\circ}$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Zaključek}
-
-Obravnavali smo krožnico in krožni lok, ki smo ju predstavili kot Racionalno B\'ezierjevo krivuljo.
+\ \ \ \
+Obravnavali smo krožnico in krožni lok, ki smo ju predstavili kot racionalno B\'ezierjevo krivuljo.
 Pri iskanju najmanjše stopnje take krivulje, ki eksaktno opiše krožnico, je bil problem pretvorjen na iskanje polinomske krivulje (v $\mathbb{R}^3$), ki leži na stožcu.
-Pokazali smo, da je najmanjša stopnja krivulje, ki opiše sklenjen krožni lok, stopnja 4, vendar taka krivulja nima vseh pozitivnih uteži. 
+Pokazali smo, da je najmanjša stopnja krivulje, ki opiše sklenjen krožni lok, stopnja 4, vendar taka krivulja nima vseh uteži pozitivnih. 
 Da smo pridobili le pozitivne uteži, smo dvignili stopnjo krivulje -- torej najnižja stopnja krivulje, s katero lahko eksaktno opišemo krožnico in ima pozitivne uteži, je stopnja 5. 
 Iz tega je sledila geometrijska interpretacija dviga stopnje krivulje in njene projekcije iz stožca na ravnino $w = 1$, tako da smo dobili krožnico s pripadajočim kontrolnim poligonom.
 Nadalje smo si ogledali še kubične B\'ezierjeve krožne loke in ugotovili, da je največji kot, ki ga z njimi lahko opišemo, velik 240 stopinj.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{thebibliography}{99}
@@ -469,7 +476,7 @@ J.~J.~Chou, \emph{Higher order Bezier circles}, Computer-Aided Design \textbf{27
 G.~Farin, \emph{Curves and surfaces for CAGD}, A Practical Guide, 5th ed., Morgan Kaufmann, 2002, poglavje 12.7
 
 \bibitem{knez}
-M.~Knez, J.~Grošelj, \emph{Računalniško podprto geometrijsko oblikovanje}, ... (2020)
+Lastni zapiski po predavanjih profesorice M.~Knez pri predmetu \emph{Računalniško podprto geometrijsko oblikovanje}, šolsko leto 2020/2021.
 \end{thebibliography}
 
 

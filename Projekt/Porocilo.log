@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.1)  14 JAN 2021 18:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.1)  15 JAN 2021 10:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -368,21 +368,21 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
  (/Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/Porocilo.aux)
 \openout1 = `Porocilo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 62.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/ucs/ucsencs.def
@@ -414,7 +414,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \c@lstlisting=\count136
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 61.
+Package hyperref Info: Link coloring OFF on input line 62.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -422,9 +422,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count137
 )
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
-LaTeX Info: Redefining \nameref on input line 61.
+LaTeX Info: Redefining \ref on input line 62.
+LaTeX Info: Redefining \pageref on input line 62.
+LaTeX Info: Redefining \nameref on input line 62.
  (/Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/Porocilo.out) (/Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/Porocilo.out)
 \@outlinefile=\write3
 \openout3 = `Porocilo.out'.
@@ -432,312 +432,315 @@ LaTeX Info: Redefining \nameref on input line 61.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-1.def
 File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
 )
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 64.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 65.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 64.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 65.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 64.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 65.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 64.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 65.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 64.
+(Font)              <12> on input line 65.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 64.
+(Font)              <8> on input line 65.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 64.
-LaTeX Font Info:    Try loading font information for U+msa on input line 64.
+(Font)              <6> on input line 65.
+LaTeX Font Info:    Try loading font information for U+msa on input line 65.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 64.
+LaTeX Font Info:    Try loading font information for U+msb on input line 65.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 66.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 76.
+(babel)             in language  on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 78.
-LaTeX Font Info:    Calculating math sizes for size <13.13995> on input line 87.
+(Font)              <10.95> on input line 81.
+LaTeX Font Info:    Calculating math sizes for size <13.13995> on input line 90.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13.13995> on input line 87.
+(Font)              <13.13995> on input line 90.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.19792> on input line 87.
+(Font)              <9.19792> on input line 90.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.56998> on input line 87.
+(Font)              <6.56998> on input line 90.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 89.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 89.
+(babel)             in language  on input line 92.
  [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
+Underfull \hbox (badness 10000) in paragraph at lines 94--96
 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 100.
 
-Overfull \hbox (13.30757pt too wide) in paragraph at lines 105--107
+Overfull \hbox (13.30757pt too wide) in paragraph at lines 109--111
 \T1/lmr/m/n/10.95 kjer so $[][]\OML/lmm/m/it/10.95 ; [][]; [][] \OMS/lmsy/m/n/10.95 2 \U/msb/m/n/10.95 R[]$ \T1/lmr/m/n/10.95 kon-trolne to�ke kri-vu-lje, $\OML/lmm/m/it/10.95 w$ \T1/lmr/m/n/10.95 ute�, ve-zana na kon-trolno to�ko $[][]$, $\OML/lmm/m/it/10.95 B[];  i \OT1/lmr/m/n/10.95 =  0\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 1\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 2\OML/lmm/m/it/10.95 ;$
  []
 
 <vecanje_w1.png, id=72, 381.425pt x 586.69188pt>
 File: vecanje_w1.png Graphic file (type png)
 <use vecanje_w1.png>
-Package pdftex.def Info: vecanje_w1.png  used on input line 118.
+Package pdftex.def Info: vecanje_w1.png  used on input line 122.
 (pdftex.def)             Requested size: 199.16928pt x 306.35274pt.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 127.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 127.
 [2]
 <tri_oblike.png, id=82, 265.49188pt x 228.35312pt>
 File: tri_oblike.png Graphic file (type png)
 <use tri_oblike.png>
-Package pdftex.def Info: tri_oblike.png  used on input line 128.
-(pdftex.def)             Requested size: 199.16928pt x 171.30971pt.
+Package pdftex.def Info: tri_oblike.png  used on input line 132.
+(pdftex.def)             Requested size: 184.9429pt x 159.07256pt.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 142.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 140.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 149.
  [3 </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/vecanje_w1.png> </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/tri_oblike.png>]
 <krog_po_delih.png, id=93, 249.93375pt x 234.37563pt>
 File: krog_po_delih.png Graphic file (type png)
 <use krog_po_delih.png>
-Package pdftex.def Info: krog_po_delih.png  used on input line 148.
+Package pdftex.def Info: krog_po_delih.png  used on input line 152.
 (pdftex.def)             Requested size: 170.71652pt x 160.0957pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--155
+Underfull \hbox (badness 10000) in paragraph at lines 156--159
 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 160.
+(babel)             in language  on input line 164.
 <stozec.png, id=97, 1124.2pt x 843.15pt>
 File: stozec.png Graphic file (type png)
 <use stozec.png>
-Package pdftex.def Info: stozec.png  used on input line 172.
+Package pdftex.def Info: stozec.png  used on input line 177.
 (pdftex.def)             Requested size: 256.0748pt x 192.05493pt.
 
-Overfull \hbox (29.59085pt too wide) in paragraph at lines 172--173
+Overfull \hbox (29.59085pt too wide) in paragraph at lines 177--178
  [][] 
  []
 
 <stozec_1.png, id=98, 1124.2pt x 843.15pt>
 File: stozec_1.png Graphic file (type png)
 <use stozec_1.png>
-Package pdftex.def Info: stozec_1.png  used on input line 176.
+Package pdftex.def Info: stozec_1.png  used on input line 181.
 (pdftex.def)             Requested size: 227.62204pt x 170.7112pt.
 
-Overfull \hbox (1.13809pt too wide) in paragraph at lines 176--177
+Overfull \hbox (1.13809pt too wide) in paragraph at lines 181--182
  [][] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 184.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 184.
 [4 </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/krog_po_delih.png>]
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 190.
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 195.
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 190.
+(hyperref)                removing `\textasciicaron' on input line 195.
 
 <stozec_presek_1.png, id=106, 1124.2pt x 843.15pt>
 File: stozec_presek_1.png Graphic file (type png)
 <use stozec_presek_1.png>
-Package pdftex.def Info: stozec_presek_1.png  used on input line 196.
+Package pdftex.def Info: stozec_presek_1.png  used on input line 202.
 (pdftex.def)             Requested size: 227.62204pt x 170.7112pt.
 
-Overfull \hbox (1.13809pt too wide) in paragraph at lines 196--197
+Overfull \hbox (1.13809pt too wide) in paragraph at lines 202--203
  [][] 
  []
 
 <stozec_presek_2.png, id=107, 1124.2pt x 843.15pt>
 File: stozec_presek_2.png Graphic file (type png)
 <use stozec_presek_2.png>
-Package pdftex.def Info: stozec_presek_2.png  used on input line 200.
+Package pdftex.def Info: stozec_presek_2.png  used on input line 206.
 (pdftex.def)             Requested size: 227.62204pt x 170.7112pt.
 
-Overfull \hbox (1.13809pt too wide) in paragraph at lines 200--201
+Overfull \hbox (1.13809pt too wide) in paragraph at lines 206--207
  [][] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 227.
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 221.
+(hyperref)                removing `\textasciicaron' on input line 227.
 
 <stozec_tang_1.png, id=108, 1124.2pt x 843.15pt>
 File: stozec_tang_1.png Graphic file (type png)
 <use stozec_tang_1.png>
-Package pdftex.def Info: stozec_tang_1.png  used on input line 233.
+Package pdftex.def Info: stozec_tang_1.png  used on input line 240.
 (pdftex.def)             Requested size: 227.62204pt x 170.7112pt.
 
-Overfull \hbox (1.13809pt too wide) in paragraph at lines 233--234
+Overfull \hbox (1.13809pt too wide) in paragraph at lines 240--241
  [][] 
  []
 
 <stozec_tang_2.png, id=109, 1124.2pt x 843.15pt>
 File: stozec_tang_2.png Graphic file (type png)
 <use stozec_tang_2.png>
-Package pdftex.def Info: stozec_tang_2.png  used on input line 237.
+Package pdftex.def Info: stozec_tang_2.png  used on input line 244.
 (pdftex.def)             Requested size: 227.62204pt x 170.7112pt.
 
-Overfull \hbox (1.13809pt too wide) in paragraph at lines 237--238
+Overfull \hbox (1.13809pt too wide) in paragraph at lines 244--245
  [][] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 241.
+(babel)             in language  on input line 248.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 241.
+(babel)             in language  on input line 248.
 [5 </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec.png (PNG copy)> </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_1.png (PNG copy)>]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 244.
+(babel)             in language  on input line 251.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 249.
+(babel)             in language  on input line 257.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 249.
+(babel)             in language  on input line 257.
  [6 </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_presek_1.png (PNG copy)> </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_presek_2.png (PNG copy)> </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_tang_1.png (PNG copy)> </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/stozec_tang_2.png (PNG copy)>]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 283.
+(babel)             in language  on input line 291.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 283.
+(babel)             in language  on input line 291.
  [7]
 <kriv4_1b.png, id=127, 1698.345pt x 1232.605pt>
 File: kriv4_1b.png Graphic file (type png)
 <use kriv4_1b.png>
-Package pdftex.def Info: kriv4_1b.png  used on input line 311.
+Package pdftex.def Info: kriv4_1b.png  used on input line 319.
 (pdftex.def)             Requested size: 227.62204pt x 165.19078pt.
 
-Overfull \hbox (1.13809pt too wide) in paragraph at lines 311--312
+Overfull \hbox (1.13809pt too wide) in paragraph at lines 319--320
  [][] 
  []
 
 <kriv4_1c.png, id=128, 1698.345pt x 1232.605pt>
 File: kriv4_1c.png Graphic file (type png)
 <use kriv4_1c.png>
-Package pdftex.def Info: kriv4_1c.png  used on input line 315.
+Package pdftex.def Info: kriv4_1c.png  used on input line 323.
 (pdftex.def)             Requested size: 199.16928pt x 144.53958pt.
 <kriv4_2a.png, id=129, 1698.345pt x 1232.605pt>
 File: kriv4_2a.png Graphic file (type png)
 <use kriv4_2a.png>
-Package pdftex.def Info: kriv4_2a.png  used on input line 323.
+Package pdftex.def Info: kriv4_2a.png  used on input line 331.
 (pdftex.def)             Requested size: 227.62204pt x 165.19078pt.
 
-Overfull \hbox (1.13809pt too wide) in paragraph at lines 323--324
+Overfull \hbox (1.13809pt too wide) in paragraph at lines 331--332
  [][] 
  []
 
 <kriv4_2c.png, id=130, 1698.345pt x 1232.605pt>
 File: kriv4_2c.png Graphic file (type png)
 <use kriv4_2c.png>
-Package pdftex.def Info: kriv4_2c.png  used on input line 327.
+Package pdftex.def Info: kriv4_2c.png  used on input line 335.
 (pdftex.def)             Requested size: 199.16928pt x 144.53958pt.
 <kriv4_3a.png, id=133, 1698.345pt x 1232.605pt>
 File: kriv4_3a.png Graphic file (type png)
 <use kriv4_3a.png>
-Package pdftex.def Info: kriv4_3a.png  used on input line 335.
+Package pdftex.def Info: kriv4_3a.png  used on input line 343.
 (pdftex.def)             Requested size: 227.62204pt x 165.19078pt.
 
-Overfull \hbox (1.13809pt too wide) in paragraph at lines 335--336
+Overfull \hbox (1.13809pt too wide) in paragraph at lines 343--344
  [][] 
  []
 
 <kriv4_3b.png, id=134, 1698.345pt x 1232.605pt>
 File: kriv4_3b.png Graphic file (type png)
 <use kriv4_3b.png>
-Package pdftex.def Info: kriv4_3b.png  used on input line 339.
+Package pdftex.def Info: kriv4_3b.png  used on input line 347.
 (pdftex.def)             Requested size: 227.62204pt x 165.19078pt.
 
-Overfull \hbox (1.13809pt too wide) in paragraph at lines 339--340
+Overfull \hbox (1.13809pt too wide) in paragraph at lines 347--348
  [][] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 347.
+(babel)             in language  on input line 355.
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 347.
+(hyperref)                removing `\textasciicaron' on input line 355.
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 351.
+(babel)             in language  on input line 358.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 351.
+(babel)             in language  on input line 358.
 [8]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 351.
+(babel)             in language  on input line 358.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 351.
+(babel)             in language  on input line 358.
  [9 </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/kriv4_1b.png (PNG copy)> </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/kriv4_1c.png (PNG copy)> </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/kriv4_2a.png (PNG copy)> </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/kriv4_2c.png (PNG copy)> </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/kriv4_3a.png (PNG copy)> </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/kriv4_3b.png (PNG copy)>]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 384.
+(babel)             in language  on input line 392.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 384.
+(babel)             in language  on input line 392.
  [10]
-Underfull \hbox (badness 10000) in paragraph at lines 404--406
+Underfull \hbox (badness 10000) in paragraph at lines 411--413
 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 420.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 420.
+(babel)             in language  on input line 427.
 [11]
 <graf.png, id=160, 324.46219pt x 307.1475pt>
 File: graf.png Graphic file (type png)
 <use graf.png>
-Package pdftex.def Info: graf.png  used on input line 445.
+Package pdftex.def Info: graf.png  used on input line 451.
 (pdftex.def)             Requested size: 227.62204pt x 215.47981pt.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 460.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 454.
+(hyperref)                removing `\textasciicaron' on input line 460.
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 468.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 468.
 [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 476.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 483.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 476.
+(babel)             in language  on input line 483.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 476.
+(babel)             in language  on input line 483.
  [13 </Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/graf.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 476.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 483.
  (/Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/Porocilo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 476.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 476.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 483.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 483.
 Package rerunfilecheck Info: File `Porocilo.out' has not changed.
 (rerunfilecheck)             Checksum: 03EEF46C610A3E6B1C3ABF70F0DDE325;750.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 476.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 483.
  ) 
 Here is how much of TeX's memory you used:
  10206 strings out of 492649
@@ -748,7 +751,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  28i,13n,40p,437b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/Porocilo.pdf" (13 pages, 1027255 bytes).
+Output written on "/Users/sarabizjak/Documents/IŠRM magistrski/CAGD/CAGD/Projekt/Porocilo.pdf" (13 pages, 1027544 bytes).
 PDF statistics:
  242 PDF objects out of 1000 (max. 8388607)
  185 compressed objects within 2 object streams
